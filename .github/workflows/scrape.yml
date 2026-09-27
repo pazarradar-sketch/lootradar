@@ -33,6 +33,12 @@ jobs:
           git config user.name "pazar-radar-bot"
           git config user.email "bot@users.noreply.github.com"
           git add docs/data
-          git diff --cached --quiet && echo "değişiklik yok" || git commit -m "data: $(date -u +'%Y-%m-%d %H:%M') UTC"
-          git pull --rebase origin main || true
-          git push
+          git diff --cached --quiet && { echo "değişiklik yok"; exit 0; }
+          git commit -m "data: $(date -u +'%Y-%m-%d %H:%M') UTC"
+          # Çakışmada taze veri kazanır (-X theirs = rebase'te yeniden uygulanan bizim commit); 3 deneme
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep 10
+          done
+          exit 1

@@ -1,6 +1,40 @@
 {
- "ts": "2026-09-27T09:22:00.406Z",
+ "ts": "2026-09-27T09:37:19.842Z",
  "bySource": {
+  "bynogame": {
+   "Zero": {
+    "buy": 521,
+    "sell": 574.99
+   },
+   "Felis": {
+    "buy": 178,
+    "sell": 195.99
+   },
+   "Pandora": {
+    "buy": 350,
+    "sell": 412.99
+   },
+   "Agartha": {
+    "buy": 393,
+    "sell": 427.99
+   },
+   "Dryads": {
+    "buy": 310,
+    "sell": 338.99
+   },
+   "Destan": {
+    "buy": 405,
+    "sell": 442.99
+   },
+   "Minark": {
+    "buy": 248,
+    "sell": 271.99
+   },
+   "Oreads": {
+    "buy": 315,
+    "sell": 340.99
+   }
+  },
   "gamesatis": {
    "Zero": {
     "buy": 515,
@@ -32,7 +66,7 @@
    },
    "Destan": {
     "buy": 360,
-    "sell": 418
+    "sell": 415
    }
   },
   "kopazar": {
@@ -147,72 +181,37 @@
     "buy": 160.3,
     "sell": 346.8
    }
-  },
-  "bynogame": {
-   "Zero": {
-    "buy": 521,
-    "sell": 571.99
-   },
-   "Felis": {
-    "buy": 178,
-    "sell": 195.99
-   },
-   "Pandora": {
-    "buy": 350,
-    "sell": 413.99
-   },
-   "Agartha": {
-    "buy": 393,
-    "sell": 427.99
-   },
-   "Dryads": {
-    "buy": 310,
-    "sell": 338.99
-   },
-   "Destan": {
-    "buy": 405,
-    "sell": 440.99
-   },
-   "Minark": {
-    "buy": 248,
-    "sell": 271.99
-   },
-   "Oreads": {
-    "buy": 315,
-    "sell": 340.99
-   }
   }
  },
  "status": {
   "bynogame": {
-   "ok": false,
-   "ts": "2026-09-27T09:11:59.713Z",
-   "error": "HTTP 403 https://www.bynogame.com/tr/oyunlar/knight-online/gold-bar",
-   "stale": true
+   "ok": true,
+   "ts": "2026-09-27T09:37:19.842Z",
+   "n": 8
   },
   "gamesatis": {
    "ok": true,
-   "ts": "2026-09-27T09:22:00.406Z",
+   "ts": "2026-09-27T09:37:19.842Z",
    "n": 8
   },
   "kopazar": {
    "ok": true,
-   "ts": "2026-09-27T09:22:00.406Z",
+   "ts": "2026-09-27T09:37:19.842Z",
    "n": 9
   },
   "oyunfor": {
    "ok": true,
-   "ts": "2026-09-27T09:22:00.406Z",
+   "ts": "2026-09-27T09:37:19.842Z",
    "n": 8
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-09-27T09:22:00.406Z",
+   "ts": "2026-09-27T09:37:19.842Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-09-27T09:22:00.406Z",
+   "ts": "2026-09-27T09:37:19.842Z",
    "sellers": [
     "kopazar",
     "bursagb",

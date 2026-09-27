@@ -22,11 +22,13 @@ export default function Cs2({ cs2, tr, signals, cs2hist, query }) {
     const rows = [];
     rows.push({ k: "cf", name: "CSFloat → Stripe → IBAN", price: M.fmt(p), fees: `2% + ${cfw}% + ${fxl}%`, netUsd: p * 0.98 * (1 - w) * (1 - l), note: lang === "tr" ? "1–4 iş günü; 7 gün Trade Protection sonrası listelenir" : "1–4 business days; listable after 7-day Trade Protection", cash: true });
     rows.push({ k: "is", name: "itemsatis → IBAN", price: M.fromTL(T), fees: "7% + 20 TL", netUsd: (T * 0.93 - 20) / fx.usdtry, note: lang === "tr" ? "alıcı bulmak gerek; T.C. kimlik doğrulaması" : "needs a buyer; Turkish ID verification", cash: true });
-    if (st != null) rows.push({ k: "bng", name: "ByNoGame Bize Sat", price: M.fmt(st * Q), fees: lang === "tr" ? "Steam değerinin %65'i" : "65% of Steam value", netUsd: st * Q * 0.65, note: lang === "tr" ? "anında; 8 gün Steam koruması sonrası cüzdana" : "instant; wallet after 8-day Steam hold", cash: true });
+    const bngSell = tr?.items?.[name]?.bynogameSellUsTL;
+    if (bngSell != null) rows.push({ k: "bng", name: "ByNoGame Bize Sat", price: M.fromTL(bngSell * Q), fees: lang === "tr" ? "gerçek anlık alım fiyatı, komisyon yok" : "live instant-buy price, no fee", netUsd: (bngSell * Q) / fx.usdtry, note: lang === "tr" ? "anında; 8 gün Steam koruması sonrası cüzdana" : "instant; wallet after 8-day Steam hold", cash: true });
+    else if (st != null) rows.push({ k: "bng", name: "ByNoGame Bize Sat", price: M.fmt(st * Q), fees: lang === "tr" ? "tahmin: Steam değerinin %65'i" : "estimate: 65% of Steam value", netUsd: st * Q * 0.65, note: lang === "tr" ? "anında; 8 gün Steam koruması sonrası cüzdana" : "instant; wallet after 8-day Steam hold", cash: true });
     if (st != null) rows.push({ k: "steam", name: "Steam Community Market", price: M.fmt(st * Q), fees: "13%", netUsd: st * Q * 0.87, note: t.cs2.notCash, cash: false });
     rows.push({ k: "sp", name: "Skinport", price: sk != null ? M.fmt(sk * Q) : "—", fees: "8%", netUsd: null, note: t.cs2.noPay, cash: false });
     return rows;
-  }, [v, qty, price, tl, cfw, fxl, currency, lang]);
+  }, [v, qty, price, tl, cfw, fxl, currency, lang, tr]);
   const bestNet = Math.max(...routes.filter((r) => r.cash && r.netUsd != null).map((r) => r.netUsd), -Infinity);
   const histSeries = useMemo(() => { if (!name || !cs2hist?.days) return null; const days = Object.keys(cs2hist.days).sort(); const pts = days.map((d) => [d, cs2hist.days[d][name]]).filter((x) => x[1]); if (pts.length < 2) return null; return { labels: pts.map((x) => x[0].slice(5)), datasets: [{ label: "CSFloat", data: pts.map((x) => x[1][0] == null ? null : M.conv(x[1][0])), borderColor: "#2563eb", spanGaps: true }, { label: "Skinport", data: pts.map((x) => x[1][1] == null ? null : M.conv(x[1][1])), borderColor: "#10b981", spanGaps: true }, { label: "Steam", data: pts.map((x) => x[1][2] == null ? null : M.conv(x[1][2])), borderColor: "#f59e0b", spanGaps: true }] }; }, [name, cs2hist, currency]);
   const liquid = signals?.liquid || [];

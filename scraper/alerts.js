@@ -46,7 +46,9 @@ export async function runAlerts() {
     } catch (e) { log("tg updates hata", e.message); }
   }
   // 2) Kuralları değerlendir
-  const rules = await sb("alert_rules?active=eq.true&select=*,profiles:user_id(telegram_chat_id,email,lang)");
+  const rulesRaw = await sb("alert_rules?active=eq.true&select=*");
+  const profs = Object.fromEntries((await sb("profiles?select=id,telegram_chat_id,email,lang")).map((p) => [p.id, p]));
+  const rules = rulesRaw.map((r) => ({ ...r, profiles: profs[r.user_id] || null }));
   const subs = Object.fromEntries((await sb("subscriptions?select=user_id,plan,valid_until")).map((s) => [s.user_id, s]));
   let fired = 0;
   for (const r of rules) {

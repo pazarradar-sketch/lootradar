@@ -16,6 +16,7 @@
   <nav>
     <button data-tab="ko" class="on">Knight Online GB</button>
     <button data-tab="cs2">CS2 Nakit Çıkış</button>
+    <button data-tab="scan">CS2 Fırsat Tarayıcı</button>
     <button data-tab="about">Yöntem &amp; Kaynaklar</button>
   </nav>
 </div></header>
@@ -26,6 +27,10 @@
     <h2>Sunucu bazlı GB fiyatları <span class="note">(TL / 1 GB — <b>Alış</b>: siteye satarken eline geçen · <b>Satış</b>: siteden alırken ödediğin)</span></h2>
     <div class="tablewrap"><table id="ko-table"></table></div>
     <p class="note" id="ko-status"></p>
+    <div class="card" style="margin-top:14px">
+      <h3>Pazarlar arası arbitraj var mı? <span class="note">(A sitesinden al, B sitesine sat)</span></h3>
+      <div id="ko-arb"></div>
+    </div>
     <div class="two" style="margin-top:14px">
       <div class="card">
         <h3>Fiyat geçmişi</h3>
@@ -70,6 +75,24 @@
       <div class="tablewrap" style="margin-top:10px"><table id="s-routes"></table></div>
       <p class="note" id="s-note"></p>
     </div>
+  </section>
+
+  <section id="tab-scan" class="tab">
+    <div class="card">
+      <div class="row">
+        <label class="f">Rota <select id="sc-route">
+          <option value="sk2cf">Skinport'ta al → CSFloat'ta sat (nakit→nakit)</option>
+          <option value="cf2st">CSFloat'ta al → Steam'de sat (nakit→Steam cüzdanı)</option>
+          <option value="st2cf">Steam'de al → CSFloat'ta sat (koruma ayağı)</option>
+        </select></label>
+        <label class="f">Min. fiyat (USD) <input type="number" id="sc-min" value="1" step="0.5" min="0"></label>
+        <label class="f">Min. ilan adedi (her iki pazarda) <input type="number" id="sc-qty" value="20" step="5" min="1"></label>
+        <label class="f">Satır <select id="sc-n"><option>30</option><option selected>60</option><option>120</option></select></label>
+      </div>
+      <p class="note" id="sc-note"></p>
+    </div>
+    <div class="tablewrap" style="margin-top:10px"><table id="sc-table"></table></div>
+    <p class="note">Oran = satış tarafında eline geçen net ÷ alış tarafında ödediğin. 1,00 altı zarar. CSFloat satışta %2 komisyon + %2,5 çekim; Steam satışta %13 kesinti ve <b>nakit değil</b>. Skinport alımı Türkiye'den kartla yapılabilir, satış/ödeme yapılamaz. Ürün 7 gün Trade Protection'da kilitli kalır; fiyatlar bu sürede değişir.</p>
   </section>
 
   <section id="tab-about" class="tab">

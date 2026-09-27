@@ -12,7 +12,8 @@
     document.querySelectorAll("nav button").forEach((x) => x.classList.toggle("on", x === b));
     document.querySelectorAll(".tab").forEach((t) => t.classList.toggle("on", t.id === "tab-" + b.dataset.tab));
     try { localStorage.setItem("pr-tab", b.dataset.tab); } catch {}
-    if (b.dataset.tab === "cs2" && !state.cs2) initCs2();
+    if (b.dataset.tab === "cs2" && !state.cs2Init) initCs2();
+    if (b.dataset.tab === "scan") initScan();
   }));
   try { const t = localStorage.getItem("pr-tab"); if (t) document.querySelector(`nav button[data-tab="${t}"]`)?.click(); } catch {}
 
@@ -59,7 +60,23 @@
     for (const id of ["#h-server", "#c-server"]) $(id).innerHTML = servers.map((s) => `<option${s === (servers.includes("Zero") ? "Zero" : top[0]) ? " selected" : ""}>${s}</option>`).join("");
     ["#h-server", "#h-side", "#h-range"].forEach((id) => $(id).addEventListener("change", drawHist));
     ["#c-server", "#c-gb", "#c-fee"].forEach((id) => $(id).addEventListener("input", calcKo));
-    drawHist(); calcKo();
+    drawHist(); calcKo(); koArb(latest);
+  }
+
+  function koArb(latest) {
+    const rows = [];
+    for (const s of latest.servers) {
+      let bestBuyAt = null, bestSellTo = null; // en ucuz satış (alırken) / en yüksek alış (satarken)
+      for (const [src, per] of Object.entries(latest.bySource)) {
+        const v = per[s]; if (!v) continue;
+        if (v.sell != null && (!bestBuyAt || v.sell < bestBuyAt.p)) bestBuyAt = { src, p: v.sell };
+        if (v.buy != null && (!bestSellTo || v.buy > bestSellTo.p)) bestSellTo = { src, p: v.buy };
+      }
+      if (bestBuyAt && bestSellTo) rows.push({ s, a: bestBuyAt, b: bestSellTo, r: bestSellTo.p / bestBuyAt.p });
+    }
+    rows.sort((x, y) => y.r - x.r);
+    const L = (k) => latest.labels[k]?.label || k;
+    $("#ko-arb").innerHTML = `<table style="min-width:0"><tr><th>Sunucu</th><th>En ucuz al</th><th>En pahalı sat</th><th>Oran</th><th>10 GB'de</th></tr>${rows.map((x) => `<tr><td><b>${x.s}</b></td><td>${fmtTL(x.a.p)} <span class="dim">${L(x.a.src)}</span></td><td>${fmtTL(x.b.p)} <span class="dim">${L(x.b.src)}</span></td><td class="${x.r >= 1 ? "best" : ""}">${x.r.toFixed(3)}</td><td class="${x.r >= 1 ? "" : "dim"}">${fmtTL((x.b.p - x.a.p) * 10)}</td></tr>`).join("")}</table><p class="note" style="margin:8px 0 0">${rows.some((x) => x.r >= 1) ? "<b>Dikkat:</b> oranı 1'in üstünde sunucu var; teslimat ve çekim ücretlerini düş." : "Bugün hiçbir sunucuda pazarlar arası arbitraj yok: her sitede alış fiyatı, diğer sitelerin satış fiyatının altında. Kâr yalnızca fiyat hareketinden gelir."}</p>`;
   }
 
   let chart;
@@ -86,9 +103,9 @@
 
   // ---------- CS2 ----------
   async function initCs2() {
-    state.cs2 = { loading: true };
-    $("#s-empty").textContent = "Fiyat listesi yükleniyor…";
-    const d = await load("cs2.json");
+    state.cs2Init = true;
+    let d = state.cs2 && !state.cs2.loading ? state.cs2 : null;
+    if (!d) { state.cs2 = { loading: true }; $("#s-empty").textContent = "Fiyat listesi yükleniyor…"; d = await load("cs2.json"); }
     if (!d) { $("#s-empty").textContent = "CS2 verisi henüz yok."; return; }
     state.cs2 = d; state.names = Object.keys(d.items);
     $("#s-empty").innerHTML = `${fmtN(state.names.length)} ürün yüklendi (${ago(d.ts)}). Bir ürün adı yazmaya başla.`;
@@ -135,6 +152,31 @@
     const bestNet = Math.max(...rows.map((r) => r[3] ?? -1));
     $("#s-routes").innerHTML = `<tr><th>Rota</th><th>Fiyat</th><th>Kesintiler</th><th>Eline geçen (TL)</th><th>Not</th></tr>` + rows.map((r) => `<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td class="dim">${r[2]}</td><td class="${r[3] != null && r[3] === bestNet && r[5] === "good" ? "best" : r[5] === "dim" || r[5] === "bad" ? "dim" : ""}">${r[3] != null ? fmtTL(r[3]) + `<span class="sub">${fmtUSD(r[3] / fx)}</span>` : "—"}</td><td class="dim" style="white-space:normal;min-width:200px;text-align:left">${r[4]}</td></tr>`).join("");
     $("#s-note").innerHTML = `Nakit rotalarında <b>en iyi net</b>: ${fmtTL(bestNet)}. Steam satırı karşılaştırma için; o para banka hesabına geçmez. itemsatis ilan fiyatı varsayılanı Steam referansının %88'i (Steam yoksa nakit fiyat ÷ 0,75).`;
+  }
+
+  async function initScan() {
+    if (!state.cs2 || state.cs2.loading) { if (!state.cs2) { state.cs2 = { loading: true }; const d = await load("cs2.json"); state.cs2 = d || { items: {} }; state.names = Object.keys(state.cs2.items); } else { return; } }
+    if (!state.scanBound) { state.scanBound = true; ["#sc-route", "#sc-min", "#sc-qty", "#sc-n"].forEach((id) => $(id).addEventListener("input", renderScan)); }
+    renderScan();
+  }
+  function renderScan() {
+    const route = $("#sc-route").value, min = Number($("#sc-min").value) || 0, mq = Number($("#sc-qty").value) || 0, N = Number($("#sc-n").value) || 60, fx = state.fx;
+    const cfNet = (p) => p * 0.98 * 0.975; // CSFloat satış net (USD)
+    const out = [];
+    for (const [n, v] of Object.entries(state.cs2.items)) {
+      const [cf, cfq, sk, , skq, st, stl] = v;
+      let buy, sell, net, qa, qb, ba, bb;
+      if (route === "sk2cf") { if (sk == null || cf == null) continue; buy = sk; sell = cf; net = cfNet(cf); qa = skq; qb = cfq; ba = "Skinport"; bb = "CSFloat"; }
+      else if (route === "cf2st") { if (cf == null || st == null) continue; buy = cf; sell = st; net = st * 0.87; qa = cfq; qb = stl; ba = "CSFloat"; bb = "Steam"; }
+      else { if (st == null || cf == null) continue; buy = st; sell = cf; net = cfNet(cf); qa = stl; qb = cfq; ba = "Steam"; bb = "CSFloat"; }
+      if (buy < min || (qa || 0) < mq || (qb || 0) < mq) continue;
+      out.push({ n, buy, sell, net, r: net / buy, qa, qb, ba, bb });
+    }
+    out.sort((a, b) => b.r - a.r);
+    const top = out.slice(0, N);
+    $("#sc-note").innerHTML = `${fmtN(out.length)} ürün filtreyi geçti · ${top.filter((x) => x.r >= 1).length} tanesi 1,00 üstü · veri ${ago(state.cs2.ts)}${route !== "sk2cf" ? ` · Steam fiyatı olan ${fmtN(Object.values(state.cs2.items).filter((v) => v[5] != null).length)} ürün` : ""}`;
+    $("#sc-table").innerHTML = `<tr><th>Ürün</th><th>Al (${top[0]?.ba || ""})</th><th>Sat (${top[0]?.bb || ""})</th><th>Net</th><th>Oran</th><th>İlan A / B</th></tr>` + (top.length ? top.map((x) => `<tr><td><a href="?item=${encodeURIComponent(x.n)}" data-pick="${x.n.replace(/"/g, "&quot;")}">${x.n}</a></td><td>${fmtUSD(x.buy)}</td><td>${fmtUSD(x.sell)}</td><td>${fmtUSD(x.net)}<span class="sub">${fmtTL(x.net * fx)}</span></td><td class="${x.r >= 1.05 ? "best" : x.r >= 1 ? "" : "dim"}">${x.r.toFixed(3)}</td><td class="dim">${fmtN(x.qa)} / ${fmtN(x.qb)}</td></tr>`).join("") : `<tr><td class="empty">Sonuç yok</td></tr>`);
+    $("#sc-table").querySelectorAll("[data-pick]").forEach((a) => a.addEventListener("click", (e) => { e.preventDefault(); document.querySelector('nav button[data-tab="cs2"]').click(); if (!state.cs2.loading && state.cs2.items) { pick(a.dataset.pick); } }));
   }
 
   initKo();

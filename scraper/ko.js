@@ -41,9 +41,9 @@ const SOURCES = {
     url: "https://www.kopazar.com/knight-online-gold-bar", label: "Kopazar", kind: "direct",
     parse(h) {
       const out = {};
-      for (const m of h.matchAll(/<input[^>]*data-buyprice="([\d.]+)"[^>]*data-goldname="([^"]+)"[^>]*data-sellprice="([\d.]+)"/g)) {
-        const srv = norm(m[2]); if (!srv) continue; // fiyatlar 10M başına → ×10
-        out[srv] = { buy: Math.round(Number(m[1]) * 1000) / 100, sell: Math.round(Number(m[3]) * 1000) / 100 };
+      for (const m of h.matchAll(/<input[^>]*data-maxbuy="(\d+)"[^>]*data-maxsell="(\d+)"[^>]*data-buyprice="([\d.]+)"[^>]*data-goldname="([^"]+)"[^>]*data-sellprice="([\d.]+)"/g)) {
+        const srv = norm(m[4]); if (!srv) continue; // fiyatlar 10M başına → ×10; maxbuy/maxsell 0 ise o taraf kapalı
+        out[srv] = { buy: Number(m[1]) > 0 ? Math.round(Number(m[3]) * 1000) / 100 : null, sell: Number(m[2]) > 0 ? Math.round(Number(m[5]) * 1000) / 100 : null };
       }
       return out;
     },

@@ -33,7 +33,27 @@ export async function scrapeCs2({ steamPages = 30 } = {}) {
     } catch (e) { steamStop = e.message; log("steam dur:", e.message); break; }
     await sleep(4200);
   }
-  const out = { ts: new Date().toISOString(), counts: { csfloat: Object.values(items).filter((v) => v[0] != null).length, skinport: Object.values(items).filter((v) => v[2] != null).length, steam: Object.values(items).filter((v) => v[5] != null).length, steamFresh: steamOk }, steamStop, items };
+  // Dönüşümlü: Skinport adedi en yüksek (likit) ürünlerden Steam fiyatı en eski olan N tanesini orderbook ucuyla yenile.
+  const steamAt = { ...(prev.steamAt || {}) };
+  const nowH = Math.floor(Date.now() / 3600e3);
+  for (const name of Object.keys(items)) if (items[name][5] != null && steamAt[name] == null) steamAt[name] = nowH; // popüler sayfadan gelenler taze
+  const extra = Number(process.env.STEAM_EXTRA ?? 60);
+  if (extra > 0 && !steamStop) {
+    const cand = Object.entries(items).filter(([, v]) => (v[4] || 0) >= 20 || (v[1] || 0) >= 50).sort((a, b) => (steamAt[a[0]] ?? 0) - (steamAt[b[0]] ?? 0) || (b[1][4] || 0) - (a[1][4] || 0)).slice(0, extra);
+    let n = 0;
+    for (const [name] of cand) {
+      try {
+        const qp = encodeURIComponent(JSON.stringify([730, name]));
+        const r = await getJson(`https://steamcommunity.com/market/orderbook?q=Load&qp=${qp}`, { headers: { "x-valve-request-type": "queryAction" }, retries: 0 });
+        const d = r?.data?.data;
+        if (d && d.amtMinSellOrder != null) { put(name, 5, d.amtMinSellOrder / 100); put(name, 6, d.cSellOrders ?? null); steamAt[name] = nowH; n++; }
+        else steamAt[name] = nowH - 1000; // pazarda yok; en sona at
+      } catch (e) { steamStop = e.message; log("steam ekstra dur:", e.message); break; }
+      await sleep(4200);
+    }
+    log("steam ekstra", n, "/", cand.length);
+  }
+  const out = { ts: new Date().toISOString(), steamAt, counts: { csfloat: Object.values(items).filter((v) => v[0] != null).length, skinport: Object.values(items).filter((v) => v[2] != null).length, steam: Object.values(items).filter((v) => v[5] != null).length, steamFresh: steamOk }, steamStop, items };
   writeJson("cs2.json", out);
   log("cs2 yazıldı", out.counts);
   return out;

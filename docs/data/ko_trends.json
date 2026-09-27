@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-27T11:16:30.912Z",
+ "ts": "2026-09-27T12:21:35.993Z",
  "servers": {
   "Zero": {
    "bestBuy": {
@@ -11,8 +11,8 @@
     "price": 545
    },
    "spreadPct": 4.61,
-   "current": 517,
-   "change1h": 0.39,
+   "current": 515,
+   "change1h": -0.39,
    "change24h": null,
    "change7d": null,
    "change30d": null,
@@ -20,7 +20,7 @@
    "max7d": 521,
    "min30d": 515,
    "max30d": 521,
-   "positionIn30d": 0.333,
+   "positionIn30d": 0,
    "sparkline7d": [
     [
      "2026-09-27T09:02Z",
@@ -49,17 +49,21 @@
     [
      "2026-09-27T11:16Z",
      517
+    ],
+    [
+     "2026-09-27T12:21Z",
+     515
     ]
    ],
-   "volatility7d": null,
+   "volatility7d": 0.77,
    "dataDays": 0.1,
-   "points": 7,
+   "points": 8,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %33; bekle (az veri, 0.1 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 33% of 30d range; hold (low confidence, 0.1d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.1 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.1d of data)"
    }
   },
   "Felis": {
@@ -110,11 +114,15 @@
     [
      "2026-09-27T11:16Z",
      185
+    ],
+    [
+     "2026-09-27T12:21Z",
+     185
     ]
    ],
-   "volatility7d": null,
+   "volatility7d": 0,
    "dataDays": 0.1,
-   "points": 7,
+   "points": 8,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -126,15 +134,15 @@
   "Pandora": {
    "bestBuy": {
     "src": "kopazar",
-    "price": 370
+    "price": 380
    },
    "bestSell": {
     "src": "gamesatis",
     "price": 403
    },
-   "spreadPct": 8.92,
-   "current": 370,
-   "change1h": -2.63,
+   "spreadPct": 6.05,
+   "current": 380,
+   "change1h": 2.7,
    "change24h": null,
    "change7d": null,
    "change30d": null,
@@ -142,7 +150,7 @@
    "max7d": 380,
    "min30d": 370,
    "max30d": 380,
-   "positionIn30d": 0,
+   "positionIn30d": 1,
    "sparkline7d": [
     [
      "2026-09-27T09:02Z",
@@ -171,17 +179,21 @@
     [
      "2026-09-27T11:16Z",
      370
+    ],
+    [
+     "2026-09-27T12:21Z",
+     380
     ]
    ],
-   "volatility7d": null,
+   "volatility7d": 2.67,
    "dataDays": 0.1,
-   "points": 7,
+   "points": 8,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.1 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.1d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %100; bekle (az veri, 0.1 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 100% of 30d range; hold (low confidence, 0.1d of data)"
    }
   },
   "Agartha": {
@@ -232,11 +244,15 @@
     [
      "2026-09-27T11:16Z",
      395
+    ],
+    [
+     "2026-09-27T12:21Z",
+     395
     ]
    ],
-   "volatility7d": null,
+   "volatility7d": 0,
    "dataDays": 0.1,
-   "points": 7,
+   "points": 8,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -293,11 +309,15 @@
     [
      "2026-09-27T11:16Z",
      322
+    ],
+    [
+     "2026-09-27T12:21Z",
+     322
     ]
    ],
-   "volatility7d": null,
+   "volatility7d": 0,
    "dataDays": 0.1,
-   "points": 7,
+   "points": 8,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -354,11 +374,15 @@
     [
      "2026-09-27T11:16Z",
      400
+    ],
+    [
+     "2026-09-27T12:21Z",
+     400
     ]
    ],
-   "volatility7d": null,
+   "volatility7d": 0.71,
    "dataDays": 0.1,
-   "points": 7,
+   "points": 8,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -374,9 +398,9 @@
    },
    "bestSell": {
     "src": "gamesatis",
-    "price": 267
+    "price": 269
    },
-   "spreadPct": 5.95,
+   "spreadPct": 6.75,
    "current": 252,
    "change1h": 0,
    "change24h": null,
@@ -415,11 +439,15 @@
     [
      "2026-09-27T11:16Z",
      252
+    ],
+    [
+     "2026-09-27T12:21Z",
+     252
     ]
    ],
-   "volatility7d": null,
+   "volatility7d": 0,
    "dataDays": 0.1,
-   "points": 7,
+   "points": 8,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -476,11 +504,15 @@
     [
      "2026-09-27T11:16Z",
      312
+    ],
+    [
+     "2026-09-27T12:21Z",
+     312
     ]
    ],
-   "volatility7d": null,
+   "volatility7d": 0.55,
    "dataDays": 0.1,
-   "points": 7,
+   "points": 8,
    "signal": {
     "trend": "flat",
     "stance": "hold",

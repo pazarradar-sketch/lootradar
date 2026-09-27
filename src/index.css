@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-500: #4f6ef7;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); font-feature-settings: "tnum" 1, "cv11" 1; }
+.card { @apply rounded-2xl border border-slate-200/80 bg-white shadow-[0_1px_2px_rgba(15,23,42,.04)] dark:border-slate-800 dark:bg-slate-900; }
+.brand-grad { background-image: linear-gradient(135deg, #2563eb 0%, #4f46e5 55%, #7c3aed 100%); }
+.brand-text { background-image: linear-gradient(135deg, #2563eb, #7c3aed); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 disabled:opacity-50; }
+.btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 disabled:opacity-50 text-white shadow-sm hover:opacity-95 active:opacity-90; background-image: linear-gradient(135deg, #2563eb 0%, #4f46e5 55%, #7c3aed 100%); }
+.btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500/60 disabled:opacity-50 border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800; }
+.input { @apply w-full rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/30 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100; }
+.label { @apply mb-1.5 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400; }
+.th { @apply px-3 py-2.5 text-left text-[11px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 whitespace-nowrap; }
+.td { @apply px-3 py-2.5 text-sm whitespace-nowrap border-t border-slate-100 dark:border-slate-800; }
+.num { font-variant-numeric: tabular-nums; }
+.chip { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold; }
+.chip-up { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold bg-emerald-50 text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-300; }
+.chip-down { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold bg-rose-50 text-rose-700 dark:bg-rose-500/10 dark:text-rose-300; }
+.chip-flat { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300; }
+.chip-brand { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold bg-indigo-50 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-300; }
+.chip-warn { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold bg-amber-50 text-amber-700 dark:bg-amber-500/10 dark:text-amber-300; }
+.best { @apply bg-emerald-50 font-bold text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-300 rounded-lg; }
+.sticky-col { @apply sticky left-0 bg-white dark:bg-slate-900; }
+.fade-in { animation: fade .25s ease-out; } @keyframes fade { from { opacity: 0; transform: translateY(4px) } to { opacity: 1; transform: none } }

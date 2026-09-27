@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-27T15:16:37.779Z",
+ "ts": "2026-09-27T16:17:03.675Z",
  "servers": {
   "Zero": {
    "bestBuy": {
@@ -65,11 +65,15 @@
     [
      "2026-09-27T15:16Z",
      510
+    ],
+    [
+     "2026-09-27T16:16Z",
+     510
     ]
    ],
-   "volatility7d": 0.52,
+   "volatility7d": 0.5,
    "dataDays": 0.3,
-   "points": 11,
+   "points": 12,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -142,11 +146,15 @@
     [
      "2026-09-27T15:16Z",
      184
+    ],
+    [
+     "2026-09-27T16:16Z",
+     184
     ]
    ],
-   "volatility7d": 1.56,
+   "volatility7d": 1.43,
    "dataDays": 0.3,
-   "points": 11,
+   "points": 12,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -162,11 +170,11 @@
    },
    "bestSell": {
     "src": "gamesatis",
-    "price": 403
+    "price": 404
    },
-   "spreadPct": 7.47,
+   "spreadPct": 7.73,
    "current": 375,
-   "change1h": -1.32,
+   "change1h": 0,
    "change24h": null,
    "change7d": null,
    "change30d": null,
@@ -219,11 +227,15 @@
     [
      "2026-09-27T15:16Z",
      375
+    ],
+    [
+     "2026-09-27T16:16Z",
+     375
     ]
    ],
-   "volatility7d": 1.77,
+   "volatility7d": 1.62,
    "dataDays": 0.3,
-   "points": 11,
+   "points": 12,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -235,22 +247,22 @@
   "Agartha": {
    "bestBuy": {
     "src": "kopazar",
-    "price": 397
+    "price": 400
    },
    "bestSell": {
     "src": "gamesatis",
-    "price": 418
+    "price": 420
    },
-   "spreadPct": 5.29,
-   "current": 397,
-   "change1h": 0.51,
+   "spreadPct": 5,
+   "current": 400,
+   "change1h": 0.76,
    "change24h": null,
    "change7d": null,
    "change30d": null,
    "min7d": 395,
-   "max7d": 397,
+   "max7d": 400,
    "min30d": 395,
-   "max30d": 397,
+   "max30d": 400,
    "positionIn30d": 1,
    "sparkline7d": [
     [
@@ -296,11 +308,15 @@
     [
      "2026-09-27T15:16Z",
      397
+    ],
+    [
+     "2026-09-27T16:16Z",
+     400
     ]
    ],
-   "volatility7d": 0.21,
+   "volatility7d": 0.32,
    "dataDays": 0.3,
-   "points": 11,
+   "points": 12,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -320,7 +336,7 @@
    },
    "spreadPct": 4.69,
    "current": 320,
-   "change1h": -0.62,
+   "change1h": 0,
    "change24h": null,
    "change7d": null,
    "change30d": null,
@@ -373,11 +389,15 @@
     [
      "2026-09-27T15:16Z",
      320
+    ],
+    [
+     "2026-09-27T16:16Z",
+     320
     ]
    ],
-   "volatility7d": 0.25,
+   "volatility7d": 0.23,
    "dataDays": 0.3,
-   "points": 11,
+   "points": 12,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -393,9 +413,9 @@
    },
    "bestSell": {
     "src": "gamesatis",
-    "price": 415
+    "price": 420
    },
-   "spreadPct": 2.47,
+   "spreadPct": 3.7,
    "current": 400,
    "change1h": 0,
    "change24h": null,
@@ -450,11 +470,15 @@
     [
      "2026-09-27T15:16Z",
      400
+    ],
+    [
+     "2026-09-27T16:16Z",
+     400
     ]
    ],
-   "volatility7d": 0.5,
+   "volatility7d": 0.47,
    "dataDays": 0.3,
-   "points": 11,
+   "points": 12,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -469,10 +493,10 @@
     "price": 252
    },
    "bestSell": {
-    "src": "gamesatis",
-    "price": 269
+    "src": "bynogame",
+    "price": 271.99
    },
-   "spreadPct": 6.75,
+   "spreadPct": 7.93,
    "current": 252,
    "change1h": 0,
    "change24h": null,
@@ -527,11 +551,15 @@
     [
      "2026-09-27T15:16Z",
      252
+    ],
+    [
+     "2026-09-27T16:16Z",
+     252
     ]
    ],
    "volatility7d": 0,
    "dataDays": 0.3,
-   "points": 11,
+   "points": 12,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -546,18 +574,18 @@
     "price": 315
    },
    "bestSell": {
-    "src": "gamesatis",
+    "src": "oyunfor",
     "price": 320
    },
    "spreadPct": 1.59,
-   "current": 312,
-   "change1h": 0,
+   "current": 305,
+   "change1h": -2.24,
    "change24h": null,
    "change7d": null,
    "change30d": null,
-   "min7d": 312,
+   "min7d": 305,
    "max7d": 315,
-   "min30d": 312,
+   "min30d": 305,
    "max30d": 315,
    "positionIn30d": 0,
    "sparkline7d": [
@@ -604,11 +632,15 @@
     [
      "2026-09-27T15:16Z",
      312
+    ],
+    [
+     "2026-09-27T16:16Z",
+     305
     ]
    ],
-   "volatility7d": 0.39,
+   "volatility7d": 0.86,
    "dataDays": 0.3,
-   "points": 11,
+   "points": 12,
    "signal": {
     "trend": "flat",
     "stance": "hold",

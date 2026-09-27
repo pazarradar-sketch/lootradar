@@ -3,3 +3,5 @@ node_modules/
 *.log
 .env
 dist/
+_tg_state.json
+docs/data/_tg_state.json

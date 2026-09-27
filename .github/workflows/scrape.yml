@@ -20,6 +20,9 @@ jobs:
       - name: Verileri topla (KO + kur + CS2)
         env:
           STEAM_PAGES: "30"
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: node scraper/index.js all
       - name: Commit
         run: |

@@ -26,5 +26,8 @@
     "react-dom": "^18.3.1",
     "tailwindcss": "^4.3.3",
     "vite": "^5.4.21"
+  },
+  "devDependencies": {
+    "libsodium-wrappers": "^0.8.4"
   }
 }

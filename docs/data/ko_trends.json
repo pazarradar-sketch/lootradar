@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-27T20:16:47.939Z",
+ "ts": "2026-09-27T21:16:38.462Z",
  "servers": {
   "Zero": {
    "bestBuy": {
@@ -85,11 +85,15 @@
     [
      "2026-09-27T20:16Z",
      515
+    ],
+    [
+     "2026-09-27T21:16Z",
+     515
     ]
    ],
-   "volatility7d": 0.5,
+   "volatility7d": 0.48,
    "dataDays": 0.5,
-   "points": 16,
+   "points": 17,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -104,12 +108,12 @@
     "price": 180
    },
    "bestSell": {
-    "src": "oyunfor",
-    "price": 195
+    "src": "bynogame",
+    "price": 195.99
    },
-   "spreadPct": 8.33,
+   "spreadPct": 8.88,
    "current": 180,
-   "change1h": -1.1,
+   "change1h": 0,
    "change24h": null,
    "change7d": null,
    "change30d": null,
@@ -182,11 +186,15 @@
     [
      "2026-09-27T20:16Z",
      180
+    ],
+    [
+     "2026-09-27T21:16Z",
+     180
     ]
    ],
-   "volatility7d": 1.18,
+   "volatility7d": 1.13,
    "dataDays": 0.5,
-   "points": 16,
+   "points": 17,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -198,15 +206,15 @@
   "Pandora": {
    "bestBuy": {
     "src": "kopazar",
-    "price": 380
+    "price": 375
    },
    "bestSell": {
     "src": "gamesatis",
     "price": 404
    },
-   "spreadPct": 6.32,
-   "current": 380,
-   "change1h": -1.3,
+   "spreadPct": 7.73,
+   "current": 375,
+   "change1h": -1.32,
    "change24h": null,
    "change7d": null,
    "change30d": null,
@@ -214,7 +222,7 @@
    "max7d": 385,
    "min30d": 370,
    "max30d": 385,
-   "positionIn30d": 0.667,
+   "positionIn30d": 0.333,
    "sparkline7d": [
     [
      "2026-09-27T09:02Z",
@@ -279,17 +287,21 @@
     [
      "2026-09-27T20:16Z",
      380
+    ],
+    [
+     "2026-09-27T21:16Z",
+     375
     ]
    ],
-   "volatility7d": 1.45,
+   "volatility7d": 1.44,
    "dataDays": 0.5,
-   "points": 16,
+   "points": 17,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %67; bekle (az veri, 0.5 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 67% of 30d range; hold (low confidence, 0.5d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %33; bekle (az veri, 0.5 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 33% of 30d range; hold (low confidence, 0.5d of data)"
    }
   },
   "Agartha": {
@@ -376,11 +388,15 @@
     [
      "2026-09-27T20:16Z",
      395
+    ],
+    [
+     "2026-09-27T21:16Z",
+     395
     ]
    ],
-   "volatility7d": 0.64,
+   "volatility7d": 0.61,
    "dataDays": 0.5,
-   "points": 16,
+   "points": 17,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -395,10 +411,10 @@
     "price": 320
    },
    "bestSell": {
-    "src": "gamesatis",
-    "price": 335
+    "src": "kopazar",
+    "price": 333
    },
-   "spreadPct": 4.69,
+   "spreadPct": 4.06,
    "current": 320,
    "change1h": 0,
    "change24h": null,
@@ -473,11 +489,15 @@
     [
      "2026-09-27T20:16Z",
      320
+    ],
+    [
+     "2026-09-27T21:16Z",
+     320
     ]
    ],
-   "volatility7d": 0.19,
+   "volatility7d": 0.18,
    "dataDays": 0.5,
-   "points": 16,
+   "points": 17,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -570,11 +590,15 @@
     [
      "2026-09-27T20:16Z",
      390
+    ],
+    [
+     "2026-09-27T21:16Z",
+     390
     ]
    ],
-   "volatility7d": 0.81,
+   "volatility7d": 0.78,
    "dataDays": 0.5,
-   "points": 16,
+   "points": 17,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -667,11 +691,15 @@
     [
      "2026-09-27T20:16Z",
      250
+    ],
+    [
+     "2026-09-27T21:16Z",
+     250
     ]
    ],
-   "volatility7d": 0.24,
+   "volatility7d": 0.23,
    "dataDays": 0.5,
-   "points": 16,
+   "points": 17,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -686,10 +714,10 @@
     "price": 315
    },
    "bestSell": {
-    "src": "oyunfor",
-    "price": 320
+    "src": "gamesatis",
+    "price": 325
    },
-   "spreadPct": 1.59,
+   "spreadPct": 3.17,
    "current": 305,
    "change1h": 0,
    "change24h": null,
@@ -764,11 +792,15 @@
     [
      "2026-09-27T20:16Z",
      305
+    ],
+    [
+     "2026-09-27T21:16Z",
+     305
     ]
    ],
-   "volatility7d": 0.71,
+   "volatility7d": 0.68,
    "dataDays": 0.5,
-   "points": 16,
+   "points": 17,
    "signal": {
     "trend": "flat",
     "stance": "hold",

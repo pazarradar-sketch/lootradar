@@ -8,8 +8,11 @@
     "scrape": "node scraper/index.js",
     "scrape:ko": "node scraper/index.js ko",
     "scrape:cs2": "node scraper/index.js cs2",
-    "dev": "node scraper/serve.js"
+    "dev": "node scraper/serve.js",
+    "daemon": "node scraper/daemon.js"
   },
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {}
 }

@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-27T10:32:19.135Z",
+ "ts": "2026-09-27T11:16:30.912Z",
  "servers": {
   "Zero": {
    "bestBuy": {
@@ -11,8 +11,8 @@
     "price": 545
    },
    "spreadPct": 4.61,
-   "current": 515,
-   "change1h": 0,
+   "current": 517,
+   "change1h": 0.39,
    "change24h": null,
    "change7d": null,
    "change30d": null,
@@ -20,7 +20,7 @@
    "max7d": 521,
    "min30d": 515,
    "max30d": 521,
-   "positionIn30d": 0,
+   "positionIn30d": 0.333,
    "sparkline7d": [
     [
      "2026-09-27T09:02Z",
@@ -45,17 +45,21 @@
     [
      "2026-09-27T10:32Z",
      515
+    ],
+    [
+     "2026-09-27T11:16Z",
+     517
     ]
    ],
    "volatility7d": null,
    "dataDays": 0.1,
-   "points": 6,
+   "points": 7,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.1 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.1d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %33; bekle (az veri, 0.1 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 33% of 30d range; hold (low confidence, 0.1d of data)"
    }
   },
   "Felis": {
@@ -102,11 +106,15 @@
     [
      "2026-09-27T10:32Z",
      185
+    ],
+    [
+     "2026-09-27T11:16Z",
+     185
     ]
    ],
    "volatility7d": null,
    "dataDays": 0.1,
-   "points": 6,
+   "points": 7,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -117,24 +125,24 @@
   },
   "Pandora": {
    "bestBuy": {
-    "src": "oyunfor",
-    "price": 380
+    "src": "kopazar",
+    "price": 370
    },
    "bestSell": {
     "src": "gamesatis",
     "price": 403
    },
-   "spreadPct": 6.05,
-   "current": 380,
-   "change1h": 0,
+   "spreadPct": 8.92,
+   "current": 370,
+   "change1h": -2.63,
    "change24h": null,
    "change7d": null,
    "change30d": null,
-   "min7d": 380,
+   "min7d": 370,
    "max7d": 380,
-   "min30d": 380,
+   "min30d": 370,
    "max30d": 380,
-   "positionIn30d": 0.5,
+   "positionIn30d": 0,
    "sparkline7d": [
     [
      "2026-09-27T09:02Z",
@@ -159,17 +167,21 @@
     [
      "2026-09-27T10:32Z",
      380
+    ],
+    [
+     "2026-09-27T11:16Z",
+     370
     ]
    ],
    "volatility7d": null,
    "dataDays": 0.1,
-   "points": 6,
+   "points": 7,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %50; bekle (az veri, 0.1 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 50% of 30d range; hold (low confidence, 0.1d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.1 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.1d of data)"
    }
   },
   "Agartha": {
@@ -216,11 +228,15 @@
     [
      "2026-09-27T10:32Z",
      395
+    ],
+    [
+     "2026-09-27T11:16Z",
+     395
     ]
    ],
    "volatility7d": null,
    "dataDays": 0.1,
-   "points": 6,
+   "points": 7,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -273,11 +289,15 @@
     [
      "2026-09-27T10:32Z",
      322
+    ],
+    [
+     "2026-09-27T11:16Z",
+     322
     ]
    ],
    "volatility7d": null,
    "dataDays": 0.1,
-   "points": 6,
+   "points": 7,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -330,11 +350,15 @@
     [
      "2026-09-27T10:32Z",
      400
+    ],
+    [
+     "2026-09-27T11:16Z",
+     400
     ]
    ],
    "volatility7d": null,
    "dataDays": 0.1,
-   "points": 6,
+   "points": 7,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -387,11 +411,15 @@
     [
      "2026-09-27T10:32Z",
      252
+    ],
+    [
+     "2026-09-27T11:16Z",
+     252
     ]
    ],
    "volatility7d": null,
    "dataDays": 0.1,
-   "points": 6,
+   "points": 7,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -444,11 +472,15 @@
     [
      "2026-09-27T10:32Z",
      312
+    ],
+    [
+     "2026-09-27T11:16Z",
+     312
     ]
    ],
    "volatility7d": null,
    "dataDays": 0.1,
-   "points": 6,
+   "points": 7,
    "signal": {
     "trend": "flat",
     "stance": "hold",

@@ -2,18 +2,6 @@ import { useStore } from "../lib/store.jsx";
 import { useT } from "../i18n.js";
 import { Section } from "../components/ui.jsx";
 
-export function Alerts() {
-  const { lang } = useStore(); const t = useT(lang);
-  return (
-    <Section title={t.alerts.title} sub={t.alerts.sub}>
-      <div className="card p-6">
-        <div className="chip-brand">{t.pricing.cta}</div>
-        <p className="mt-3 text-sm text-slate-600 dark:text-slate-300">{t.alerts.soon}</p>
-        <ul className="mt-4 grid gap-2 sm:grid-cols-2">{t.alerts.features.map((f) => <li key={f} className="flex items-start gap-2 text-sm"><span className="mt-0.5 text-emerald-500">✓</span>{f}</li>)}</ul>
-      </div>
-    </Section>
-  );
-}
 export function Pricing() {
   const { lang, currency, fx } = useStore(); const t = useT(lang);
   const proUsd = 4.99; const price = currency === "TRY" ? `₺${Math.round(proUsd * fx.usdtry)}` : currency === "EUR" ? `€${(proUsd * (fx.usdeur || 0.92)).toFixed(2)}` : `$${proUsd}`;

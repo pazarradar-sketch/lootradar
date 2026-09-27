@@ -18,6 +18,7 @@
     "node": ">=20"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.109.0",
     "@tailwindcss/vite": "^4.3.3",
     "@vitejs/plugin-react": "^4.7.0",
     "chart.js": "^4.5.1",

@@ -1,0 +1,15 @@
+{
+  "name": "pazar-radar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pazar Radar: Türkiye için oyun pazarı fiyat radarı (Knight Online GB + CS2 nakit çıkış)",
+  "scripts": {
+    "scrape": "node scraper/index.js",
+    "scrape:ko": "node scraper/index.js ko",
+    "scrape:cs2": "node scraper/index.js cs2",
+    "dev": "node scraper/serve.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {}
+}

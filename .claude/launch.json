@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "pazar-radar", "runtimeExecutable": "node", "runtimeArgs": ["scraper/serve.js"], "port": 4410 }
+  ]
+}

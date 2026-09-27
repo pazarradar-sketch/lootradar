@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pazar Radar</title>
+<meta name="description" content="Türkiye için oyun pazarı fiyat radarı: Knight Online GB alış-satış fiyatları (sunucu bazlı, 5 pazar yeri, saatlik) ve CS2 skin nakit çıkış hesaplayıcı.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232f5bea'/%3E%3Ccircle cx='16' cy='16' r='6' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand"><span class="dot"></span> Pazar Radar</div>
+  <span class="note" id="hdr-meta"></span>
+  <nav>
+    <button data-tab="ko" class="on">Knight Online GB</button>
+    <button data-tab="cs2">CS2 Nakit Çıkış</button>
+    <button data-tab="about">Yöntem &amp; Kaynaklar</button>
+  </nav>
+</div></header>
+
+<main class="wrap">
+  <section id="tab-ko" class="tab on">
+    <div class="grid" id="ko-stats"></div>
+    <h2>Sunucu bazlı GB fiyatları <span class="note">(TL / 1 GB — <b>Alış</b>: siteye satarken eline geçen · <b>Satış</b>: siteden alırken ödediğin)</span></h2>
+    <div class="tablewrap"><table id="ko-table"></table></div>
+    <p class="note" id="ko-status"></p>
+    <div class="two" style="margin-top:14px">
+      <div class="card">
+        <h3>Fiyat geçmişi</h3>
+        <div class="row">
+          <label class="f">Sunucu <select id="h-server"></select></label>
+          <label class="f">Taraf <select id="h-side"><option value="buy">Alış (farmcıya ödenen)</option><option value="sell">Satış (oyuncuya)</option></select></label>
+          <label class="f">Aralık <select id="h-range"><option value="7">7 gün</option><option value="30" selected>30 gün</option><option value="90">90 gün</option></select></label>
+        </div>
+        <canvas id="h-chart" height="140"></canvas>
+        <p class="note" id="h-note"></p>
+      </div>
+      <div class="card">
+        <h3>Elimdeki GB'yi nakde çevirsem</h3>
+        <div class="row">
+          <label class="f">Sunucu <select id="c-server"></select></label>
+          <label class="f">GB miktarı <input type="number" id="c-gb" value="10" min="0.1" step="0.1"></label>
+          <label class="f">EFT/havale kesintisi (TL) <input type="number" id="c-fee" value="20" min="0" step="1"></label>
+        </div>
+        <div id="c-out" style="margin-top:10px"></div>
+        <p class="note">Sıralama, bugün en yüksek alış fiyatını veren siteye göre. Kesinti: ByNoGame ve GameSatış havale başına 20 TL (yardım sayfaları); ByNoGame "Bize Sat"ta komisyon yok. Kimlik doğrulaması her sitede zorunlu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tab-cs2" class="tab">
+    <div class="card search">
+      <input id="s-q" placeholder="CS2 ürün adı yaz: AK-47 | Redline (Field-Tested), Dreams &amp; Nightmares Case…" autocomplete="off">
+      <div class="sugg" id="s-sugg"></div>
+    </div>
+    <div id="s-empty" class="empty">Bir ürün seç; CSFloat, Skinport ve Steam fiyatıyla birlikte Türkiye'den her nakit rotasında eline geçecek net TL'yi gösterir.</div>
+    <div id="s-item" style="display:none">
+      <h2 id="s-name"></h2>
+      <div class="grid" id="s-prices"></div>
+      <h2>Nakit rotaları <span class="note">(satış fiyatını değiştirebilirsin)</span></h2>
+      <div class="row card">
+        <label class="f">Adet <input type="number" id="s-qty" value="1" min="1" step="1" style="width:80px"></label>
+        <label class="f">Satış fiyatın (USD, adet başı) <input type="number" id="s-price" step="0.01" min="0"></label>
+        <label class="f">itemsatis ilan fiyatın (TL, adet başı) <input type="number" id="s-tl" step="1" min="0"></label>
+        <label class="f">CSFloat çekim ücreti % <input type="number" id="f-cfw" value="2.5" step="0.1"></label>
+        <label class="f">Kur/banka kaybı % <input type="number" id="f-fx" value="1" step="0.1"></label>
+      </div>
+      <div class="tablewrap" style="margin-top:10px"><table id="s-routes"></table></div>
+      <p class="note" id="s-note"></p>
+    </div>
+  </section>
+
+  <section id="tab-about" class="tab">
+    <div class="card">
+      <h3>Ne ölçüyoruz</h3>
+      <p><b>Knight Online GB:</b> ByNoGame, GameSatış, Kopazar ve Oyunfor sayfaları doğrudan; BursaGB ve Oyunfor'un alış tarafı KO Rehberi toplayıcısından. Saatte bir çekilir, her anlık görüntü saklanır (90 gün saatlik, sonrası günlük). Kopazar ve Oyunfor 10M başına fiyat yayınlar; 1 GB = 100M'ye çevrilir.</p>
+      <p><b>CS2:</b> CSFloat fiyat listesi (en düşük ilan, adet) ve Skinport ürün listesi (en düşük, medyan, adet) saatlik; Steam Topluluk Pazarı en popüler 300 ürünün en düşük ilanı (anonim, yavaş çekim). Steam fiyatı olmayan ürünlerde Steam'e bağlı rotalar hesaplanmaz.</p>
+      <p><b>Kur:</b> open.er-api.com günlük USD/TRY; TCMB iş günü kuru varsa ayrıca gösterilir.</p>
+      <h3 style="margin-top:14px">Rota varsayımları (kaynaklı)</h3>
+      <ul class="src">
+        <li><b>CSFloat:</b> satıcı komisyonu %2, çekim %0,5–2,5 (hacme göre), Stripe ile TL IBAN'a 1–4 iş günü. Skinport Türkiye'ye ödeme yapmaz.</li>
+        <li><b>itemsatis:</b> ilan komisyonu %7 (15 TL üstü), çekim başına 20 TL, günlük 15.000 TL tavan, T.C. kimlik doğrulaması. İlanlar tipik olarak Steam fiyatının %85–92'si.</li>
+        <li><b>ByNoGame "Bize Sat" (CS2):</b> SteamAnalyst değerinin %65'i, komisyonsuz, 8 gün Steam koruması sonrası cüzdana.</li>
+        <li><b>Steam:</b> %13 kesinti (satıcı net üzerinden %15); bakiye nakde çevrilemez, yalnızca Steam içinde harcanır.</li>
+        <li><b>Vergi:</b> GİB özelgesi (3 Mart 2026) oyun içi varlık satışını sosyal içerik istisnasının dışında tutar; sürekli al-sat ticari kazanç sayılabilir.</li>
+      </ul>
+      <h3 style="margin-top:14px">Uyarı</h3>
+      <p class="note">Bu site bilgi amaçlıdır, yatırım tavsiyesi değildir. Fiyatlar pazar yerlerinin herkese açık sayfalarından alınır ve dakikalar içinde değişebilir. NTTGame kullanım sözleşmesi GB'nin gerçek paraya çevrilmesini yasaklar; Valve Abonelik Sözleşmesi üçüncü taraf satışını yasaklar. Riski sen üstlenirsin.</p>
+      <p class="note" id="about-meta"></p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">Pazar Radar · veriler herkese açık kaynaklardan saatlik toplanır · <span id="ft-meta"></span></div></footer>
+<script src="app.js"></script>
+</body>
+</html>

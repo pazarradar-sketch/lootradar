@@ -17,12 +17,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - run: npm ci
       - name: Verileri topla (KO + kur + CS2)
         env:
           STEAM_PAGES: "30"
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          SITE_URL: ${{ secrets.SITE_URL }}
         run: node scraper/index.js all
       - name: Commit
         run: |

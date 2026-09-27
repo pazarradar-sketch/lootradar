@@ -1,5 +1,6 @@
 {
  "url": "https://pgdbqaffdxuevvltqdoa.supabase.co",
  "anonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBnZGJxYWZmZHh1ZXZ2bHRxZG9hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0OTExMzEsImV4cCI6MjEwNjA2NzEzMX0.wPe87KU8egYzJ7bRv-xrgxSJMA3sz1SK2l9jNWI0ZTU",
- "telegramBot": ""
+ "telegramBot": "",
+ "vapidPublicKey": "BCK_HKg7HubJnbBojNcmST8ITLrIA92-TvEHUCUL0z1sn0uJ08x8Hqro7s9FEu54ivDR4KDOc5M1QOxVX0HIjb0"
 }

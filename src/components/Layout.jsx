@@ -14,7 +14,7 @@ export default function Layout({ route, children, meta }) {
     <div className="min-h-screen flex flex-col">
       <header className="sticky top-0 z-30 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
         <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-2.5 sm:px-6">
-          <a href="#/" className="flex items-center gap-2 font-extrabold tracking-tight"><Logo /><span>Pazar<span className="brand-text">Radar</span></span></a>
+          <a href="#/" className="flex items-center gap-2 font-extrabold tracking-tight"><Logo /><span>Loot<span className="brand-text">Radar</span></span></a>
           <nav className="ml-2 hidden items-center gap-0.5 md:flex">
             {items.map(([k, h]) => <a key={k} href={h} className={`rounded-lg px-3 py-1.5 text-sm font-semibold transition ${route === k ? "bg-slate-100 text-slate-900 dark:bg-slate-800 dark:text-white" : "text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white"}`}>{t.nav[k]}</a>)}
           </nav>
@@ -31,7 +31,7 @@ export default function Layout({ route, children, meta }) {
       </header>
       <main className="mx-auto w-full max-w-7xl flex-1 px-4 pb-16 sm:px-6">{children}</main>
       <footer className="border-t border-slate-200 py-6 text-xs text-slate-500 dark:border-slate-800 dark:text-slate-400">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6"><p className="max-w-4xl">{t.common.disclaimer}</p><p className="mt-2">© {new Date().getFullYear()} Pazar Radar · <a className="underline" href="https://github.com/pazarradar-sketch/pazar-radar">GitHub</a></p></div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6"><p className="max-w-4xl">{t.common.disclaimer}</p><p className="mt-2">© {new Date().getFullYear()} LootRadar · <a className="underline" href="https://github.com/pazarradar-sketch/lootradar">GitHub</a></p></div>
       </footer>
     </div>
   );

@@ -1,8 +1,12 @@
 // Uyarı motoru: Supabase (service_role) kurallarını okur, son verilerle karşılaştırır, Telegram'a yazar.
 // Ayrıca Telegram getUpdates ile "/start KOD" mesajlarını profil ile eşler. GitHub Actions'ta toplama sonrası çalışır.
 import { readJson, log } from "./lib.js";
+import webpush from "web-push";
 
 const SB_URL = process.env.SUPABASE_URL, SB_KEY = process.env.SUPABASE_SERVICE_KEY, TG = process.env.TELEGRAM_BOT_TOKEN;
+const VAPID_PUB = process.env.VAPID_PUBLIC_KEY, VAPID_PRIV = process.env.VAPID_PRIVATE_KEY;
+if (VAPID_PUB && VAPID_PRIV) webpush.setVapidDetails("mailto:pazarradar@gmail.com", VAPID_PUB, VAPID_PRIV);
+const SITE = process.env.SITE_URL || "https://lootradar-tr.vercel.app";
 const sb = async (path, { method = "GET", body, prefer } = {}) => {
   const r = await fetch(`${SB_URL}/rest/v1/${path}`, { method, headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}`, "Content-Type": "application/json", ...(prefer ? { Prefer: prefer } : {}) }, body: body ? JSON.stringify(body) : undefined });
   if (!r.ok) throw new Error(`supabase ${method} ${path} ${r.status} ${await r.text()}`);
@@ -38,7 +42,7 @@ export async function runAlerts() {
         const m = up.message; const text = m?.text || ""; const code = text.match(/^\/start\s+([A-Za-z0-9-]{6,})/)?.[1];
         if (code && m.chat?.id) {
           const rows = await sb(`profiles?telegram_link_code=eq.${encodeURIComponent(code)}&select=id`);
-          if (rows?.length) { await sb(`profiles?id=eq.${rows[0].id}`, { method: "PATCH", body: { telegram_chat_id: m.chat.id, telegram_link_code: null } }); await tg("sendMessage", { chat_id: m.chat.id, text: "✅ Pazar Radar bağlandı. Uyarıların buraya gelecek." }); log("tg linked", rows[0].id); }
+          if (rows?.length) { await sb(`profiles?id=eq.${rows[0].id}`, { method: "PATCH", body: { telegram_chat_id: m.chat.id, telegram_link_code: null } }); await tg("sendMessage", { chat_id: m.chat.id, text: "✅ LootRadar bağlandı. Uyarıların buraya gelecek." }); log("tg linked", rows[0].id); }
           else await tg("sendMessage", { chat_id: m.chat.id, text: "Kod bulunamadı. Sitedeki Uyarılar sayfasından yeni kod al." });
         } else if (text.startsWith("/start") && m.chat?.id) await tg("sendMessage", { chat_id: m.chat.id, text: "Merhaba! Bağlamak için sitedeki Uyarılar sayfasındaki kodu /start KOD şeklinde gönder." });
       }
@@ -48,6 +52,7 @@ export async function runAlerts() {
   // 2) Kuralları değerlendir
   const rulesRaw = await sb("alert_rules?active=eq.true&select=*");
   const profs = Object.fromEntries((await sb("profiles?select=id,telegram_chat_id,email,lang")).map((p) => [p.id, p]));
+  const pushSubs = {}; for (const ps of await sb("push_subscriptions?select=user_id,endpoint,keys")) (pushSubs[ps.user_id] ||= []).push(ps);
   const rules = rulesRaw.map((r) => ({ ...r, profiles: profs[r.user_id] || null }));
   const subs = Object.fromEntries((await sb("subscriptions?select=user_id,plan,valid_until")).map((s) => [s.user_id, s]));
   let fired = 0;
@@ -59,10 +64,18 @@ export async function runAlerts() {
     if (hit && cooled) {
       const lang = r.profiles?.lang || "tr"; const isKo = r.kind === "ko";
       const vTxt = isKo ? fmtTL(val) : fmtUSD(val), thr = isKo ? fmtTL(r.threshold) : fmtUSD(r.threshold);
-      const msg = lang === "tr" ? `🔔 ${isKo ? "Knight Online" : "CS2"} · ${r.target}\n${r.field} ${r.op} ${thr} → şu an ${vTxt}\nhttps://pazar-radar-two.vercel.app/#/${isKo ? "ko?server=" + encodeURIComponent(r.target) : "cs2?item=" + encodeURIComponent(r.target)}`
-        : `🔔 ${isKo ? "Knight Online" : "CS2"} · ${r.target}\n${r.field} ${r.op} ${thr} → now ${vTxt}\nhttps://pazar-radar-two.vercel.app/#/${isKo ? "ko?server=" + encodeURIComponent(r.target) : "cs2?item=" + encodeURIComponent(r.target)}`;
+      const url = `${SITE}/#/${isKo ? "ko?server=" + encodeURIComponent(r.target) : "cs2?item=" + encodeURIComponent(r.target)}`;
+      const title = `${isKo ? "Knight Online" : "CS2"} · ${r.target}`;
+      const body = lang === "tr" ? `${r.field} ${r.op} ${thr} → şu an ${vTxt}` : `${r.field} ${r.op} ${thr} → now ${vTxt}`;
+      const msg = `🔔 ${title}\n${body}\n${url}`;
       let delivered = false;
       if (r.channel === "telegram" && TG && r.profiles?.telegram_chat_id) { const res = await tg("sendMessage", { chat_id: r.profiles.telegram_chat_id, text: msg }); delivered = !!res.ok; }
+      if (r.channel === "push" && VAPID_PUB) {
+        for (const ps of pushSubs[r.user_id] || []) {
+          try { await webpush.sendNotification({ endpoint: ps.endpoint, keys: ps.keys }, JSON.stringify({ title, body, url, tag: r.id })); delivered = true; }
+          catch (e) { if (e.statusCode === 404 || e.statusCode === 410) { await sb(`push_subscriptions?user_id=eq.${r.user_id}&endpoint=eq.${encodeURIComponent(ps.endpoint)}`, { method: "DELETE" }); } else log("push hata", e.statusCode || e.message); }
+        }
+      }
       await sb("alert_events", { method: "POST", body: { rule_id: r.id, user_id: r.user_id, value: val, message: msg, delivered }, prefer: "return=minimal" });
       patch.last_fired_at = new Date().toISOString(); fired++;
     }

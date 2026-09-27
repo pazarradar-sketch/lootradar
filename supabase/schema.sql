@@ -105,3 +105,19 @@ begin
 end $$;
 drop trigger if exists profiles_protect on public.profiles;
 create trigger profiles_protect before update on public.profiles for each row execute function public.protect_profile_cols();
+
+-- Web push abonelikleri (tarayıcı bildirimleri; hesap gerektirmez)
+create table if not exists public.push_subscriptions (
+  user_id uuid not null references auth.users(id) on delete cascade,
+  endpoint text not null,
+  keys jsonb not null,
+  ua text,
+  created_at timestamptz default now(),
+  primary key (user_id, endpoint)
+);
+alter table public.push_subscriptions enable row level security;
+drop policy if exists "push self" on public.push_subscriptions;
+create policy "push self" on public.push_subscriptions for all using (auth.uid() = user_id) with check (auth.uid() = user_id);
+alter table public.alert_rules drop constraint if exists alert_rules_channel_check;
+alter table public.alert_rules add constraint alert_rules_channel_check check (channel in ('push','telegram','email'));
+alter table public.alert_rules alter column channel set default 'push';

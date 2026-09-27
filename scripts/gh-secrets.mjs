@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import sodium from "libsodium-wrappers";
 const env = Object.fromEntries(fs.readFileSync(".env", "utf8").split("\n").filter((l) => l.includes("=")).map((l) => { const i = l.indexOf("="); return [l.slice(0, i).trim(), l.slice(i + 1).trim()]; }));
-const { GITHUB_TOKEN: tok, GITHUB_USER: user } = env; const repo = `${user}/pazar-radar`;
+const { GITHUB_TOKEN: tok, GITHUB_USER: user } = env; const repo = `${user}/lootradar`;
 const gh = (p, o = {}) => fetch(`https://api.github.com/repos/${repo}${p}`, { ...o, headers: { Authorization: `token ${tok}`, Accept: "application/vnd.github+json", "Content-Type": "application/json", ...(o.headers || {}) } });
 await sodium.ready;
 const pk = await (await gh("/actions/secrets/public-key")).json();

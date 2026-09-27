@@ -1,9 +1,9 @@
 {
-  "name": "pazar-radar",
+  "name": "lootradar",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Pazar Radar: Türkiye için oyun pazarı fiyat radarı (Knight Online GB + CS2 nakit çıkış)",
+  "description": "LootRadar: Türkiye için oyun pazarı fiyat radarı (Knight Online GB + CS2 nakit çıkış)",
   "scripts": {
     "scrape": "node scraper/index.js",
     "scrape:ko": "node scraper/index.js ko",
@@ -25,7 +25,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwindcss": "^4.3.3",
-    "vite": "^5.4.21"
+    "vite": "^5.4.21",
+    "web-push": "^3.6.7"
   },
   "devDependencies": {
     "libsodium-wrappers": "^0.8.4"

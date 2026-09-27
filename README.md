@@ -1,4 +1,4 @@
-# Pazar Radar
+# LootRadar (eski adı Pazar Radar)
 
 Türkiye için oyun pazarı fiyat radarı. Statik site (`docs/`) + saatlik GitHub Actions toplayıcı (`scraper/`). Sunucu yok, veritabanı yok: veriler `docs/data/*.json` olarak depoya yazılır.
 

@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-27T23:15:53.008Z",
+ "ts": "2026-09-28T00:26:43.574Z",
  "servers": {
   "Zero": {
    "bestBuy": {
@@ -97,11 +97,15 @@
     [
      "2026-09-27T23:15Z",
      515
+    ],
+    [
+     "2026-09-28T00:26Z",
+     515
     ]
    ],
-   "volatility7d": 0.58,
+   "volatility7d": 0.56,
    "dataDays": 0.6,
-   "points": 19,
+   "points": 20,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -206,11 +210,15 @@
     [
      "2026-09-27T23:15Z",
      180
+    ],
+    [
+     "2026-09-28T00:26Z",
+     180
     ]
    ],
-   "volatility7d": 1.04,
+   "volatility7d": 1.01,
    "dataDays": 0.6,
-   "points": 19,
+   "points": 20,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -222,15 +230,15 @@
   "Pandora": {
    "bestBuy": {
     "src": "kopazar",
-    "price": 375
+    "price": 380
    },
    "bestSell": {
     "src": "gamesatis",
     "price": 404
    },
-   "spreadPct": 7.73,
-   "current": 375,
-   "change1h": 0,
+   "spreadPct": 6.32,
+   "current": 380,
+   "change1h": 1.33,
    "change24h": null,
    "change7d": null,
    "change30d": null,
@@ -238,7 +246,7 @@
    "max7d": 385,
    "min30d": 370,
    "max30d": 385,
-   "positionIn30d": 0.333,
+   "positionIn30d": 0.667,
    "sparkline7d": [
     [
      "2026-09-27T09:02Z",
@@ -315,17 +323,21 @@
     [
      "2026-09-27T23:15Z",
      375
+    ],
+    [
+     "2026-09-28T00:26Z",
+     380
     ]
    ],
-   "volatility7d": 1.32,
+   "volatility7d": 1.33,
    "dataDays": 0.6,
-   "points": 19,
+   "points": 20,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %33; bekle (az veri, 0.6 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 33% of 30d range; hold (low confidence, 0.6d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %67; bekle (az veri, 0.6 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 67% of 30d range; hold (low confidence, 0.6d of data)"
    }
   },
   "Agartha": {
@@ -339,7 +351,7 @@
    },
    "spreadPct": 6.87,
    "current": 390,
-   "change1h": -1.27,
+   "change1h": 0,
    "change24h": null,
    "change7d": null,
    "change30d": null,
@@ -424,11 +436,15 @@
     [
      "2026-09-27T23:15Z",
      390
+    ],
+    [
+     "2026-09-28T00:26Z",
+     390
     ]
    ],
-   "volatility7d": 0.66,
+   "volatility7d": 0.63,
    "dataDays": 0.6,
-   "points": 19,
+   "points": 20,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -533,11 +549,15 @@
     [
      "2026-09-27T23:15Z",
      320
+    ],
+    [
+     "2026-09-28T00:26Z",
+     320
     ]
    ],
-   "volatility7d": 0.17,
+   "volatility7d": 0.16,
    "dataDays": 0.6,
-   "points": 19,
+   "points": 20,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -552,12 +572,12 @@
     "price": 405
    },
    "bestSell": {
-    "src": "gamesatis",
-    "price": 420
+    "src": "kopazar",
+    "price": 415
    },
-   "spreadPct": 3.7,
+   "spreadPct": 2.47,
    "current": 380,
-   "change1h": -2.56,
+   "change1h": 0,
    "change24h": null,
    "change7d": null,
    "change30d": null,
@@ -642,11 +662,15 @@
     [
      "2026-09-27T23:15Z",
      380
+    ],
+    [
+     "2026-09-28T00:26Z",
+     380
     ]
    ],
-   "volatility7d": 0.94,
+   "volatility7d": 0.91,
    "dataDays": 0.6,
-   "points": 19,
+   "points": 20,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -751,11 +775,15 @@
     [
      "2026-09-27T23:15Z",
      250
+    ],
+    [
+     "2026-09-28T00:26Z",
+     250
     ]
    ],
-   "volatility7d": 0.21,
+   "volatility7d": 0.2,
    "dataDays": 0.6,
-   "points": 19,
+   "points": 20,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -860,11 +888,15 @@
     [
      "2026-09-27T23:15Z",
      305
+    ],
+    [
+     "2026-09-28T00:26Z",
+     305
     ]
    ],
-   "volatility7d": 0.63,
+   "volatility7d": 0.61,
    "dataDays": 0.6,
-   "points": 19,
+   "points": 20,
    "signal": {
     "trend": "flat",
     "stance": "hold",

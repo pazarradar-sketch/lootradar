@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-28T05:19:14.162Z",
+ "ts": "2026-09-28T06:26:06.853Z",
  "servers": {
   "Zero": {
    "bestBuy": {
@@ -7,12 +7,12 @@
     "price": 521
    },
    "bestSell": {
-    "src": "kopazar",
-    "price": 540
+    "src": "gamesatis",
+    "price": 537
    },
-   "spreadPct": 3.65,
-   "current": 510,
-   "change1h": 0,
+   "spreadPct": 3.07,
+   "current": 515,
+   "change1h": 0.98,
    "change24h": null,
    "change7d": null,
    "change30d": null,
@@ -20,7 +20,7 @@
    "max7d": 521,
    "min30d": 510,
    "max30d": 521,
-   "positionIn30d": 0,
+   "positionIn30d": 0.455,
    "sparkline7d": [
     [
      "2026-09-27T09:02Z",
@@ -121,37 +121,41 @@
     [
      "2026-09-28T05:18Z",
      510
+    ],
+    [
+     "2026-09-28T06:25Z",
+     515
     ]
    ],
-   "volatility7d": 0.53,
-   "dataDays": 0.8,
-   "points": 25,
+   "volatility7d": 0.56,
+   "dataDays": 0.9,
+   "points": 26,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.8 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.8d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %46; bekle (az veri, 0.9 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 46% of 30d range; hold (low confidence, 0.9d of data)"
    }
   },
   "Felis": {
    "bestBuy": {
-    "src": "gamesatis",
-    "price": 180
+    "src": "bynogame",
+    "price": 178
    },
    "bestSell": {
-    "src": "kopazar",
-    "price": 195
+    "src": "gamesatis",
+    "price": 193
    },
-   "spreadPct": 8.33,
-   "current": 180,
-   "change1h": 0,
+   "spreadPct": 8.43,
+   "current": 170,
+   "change1h": -5.56,
    "change24h": null,
    "change7d": null,
    "change30d": null,
-   "min7d": 180,
+   "min7d": 170,
    "max7d": 185,
-   "min30d": 180,
+   "min30d": 170,
    "max30d": 185,
    "positionIn30d": 0,
    "sparkline7d": [
@@ -254,17 +258,21 @@
     [
      "2026-09-28T05:18Z",
      180
+    ],
+    [
+     "2026-09-28T06:25Z",
+     170
     ]
    ],
-   "volatility7d": 0.87,
-   "dataDays": 0.8,
-   "points": 25,
+   "volatility7d": 1.45,
+   "dataDays": 0.9,
+   "points": 26,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.8 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.8d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.9 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.9d of data)"
    }
   },
   "Pandora": {
@@ -274,9 +282,9 @@
    },
    "bestSell": {
     "src": "gamesatis",
-    "price": 404
+    "price": 402
    },
-   "spreadPct": 9.19,
+   "spreadPct": 8.65,
    "current": 370,
    "change1h": 0,
    "change24h": null,
@@ -387,17 +395,21 @@
     [
      "2026-09-28T05:18Z",
      370
+    ],
+    [
+     "2026-09-28T06:25Z",
+     370
     ]
    ],
-   "volatility7d": 1.28,
-   "dataDays": 0.8,
-   "points": 25,
+   "volatility7d": 1.25,
+   "dataDays": 0.9,
+   "points": 26,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.8 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.8d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.9 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.9d of data)"
    }
   },
   "Agartha": {
@@ -407,9 +419,9 @@
    },
    "bestSell": {
     "src": "gamesatis",
-    "price": 420
+    "price": 418
    },
-   "spreadPct": 6.87,
+   "spreadPct": 6.36,
    "current": 390,
    "change1h": 0,
    "change24h": null,
@@ -520,17 +532,21 @@
     [
      "2026-09-28T05:18Z",
      390
+    ],
+    [
+     "2026-09-28T06:25Z",
+     390
     ]
    ],
-   "volatility7d": 0.54,
-   "dataDays": 0.8,
-   "points": 25,
+   "volatility7d": 0.53,
+   "dataDays": 0.9,
+   "points": 26,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.8 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.8d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.9 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.9d of data)"
    }
   },
   "Dryads": {
@@ -539,10 +555,10 @@
     "price": 320
    },
    "bestSell": {
-    "src": "kopazar",
-    "price": 333
+    "src": "gamesatis",
+    "price": 328
    },
-   "spreadPct": 4.06,
+   "spreadPct": 2.5,
    "current": 320,
    "change1h": 0,
    "change24h": null,
@@ -653,17 +669,21 @@
     [
      "2026-09-28T05:18Z",
      320
+    ],
+    [
+     "2026-09-28T06:25Z",
+     320
     ]
    ],
    "volatility7d": 0.14,
-   "dataDays": 0.8,
-   "points": 25,
+   "dataDays": 0.9,
+   "points": 26,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.8 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.8d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.9 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.9d of data)"
    }
   },
   "Destan": {
@@ -672,10 +692,10 @@
     "price": 405
    },
    "bestSell": {
-    "src": "kopazar",
-    "price": 410
+    "src": "gamesatis",
+    "price": 408
    },
-   "spreadPct": 1.23,
+   "spreadPct": 0.74,
    "current": 380,
    "change1h": 0,
    "change24h": null,
@@ -786,17 +806,21 @@
     [
      "2026-09-28T05:18Z",
      380
+    ],
+    [
+     "2026-09-28T06:25Z",
+     380
     ]
    ],
-   "volatility7d": 0.81,
-   "dataDays": 0.8,
-   "points": 25,
+   "volatility7d": 0.79,
+   "dataDays": 0.9,
+   "points": 26,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.8 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.8d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.9 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.9d of data)"
    }
   },
   "Minark": {
@@ -805,10 +829,10 @@
     "price": 248
    },
    "bestSell": {
-    "src": "kopazar",
-    "price": 270
+    "src": "gamesatis",
+    "price": 268
    },
-   "spreadPct": 8.87,
+   "spreadPct": 8.06,
    "current": 248,
    "change1h": 0,
    "change24h": null,
@@ -919,17 +943,21 @@
     [
      "2026-09-28T05:18Z",
      248
+    ],
+    [
+     "2026-09-28T06:25Z",
+     248
     ]
    ],
-   "volatility7d": 0.25,
-   "dataDays": 0.8,
-   "points": 25,
+   "volatility7d": 0.24,
+   "dataDays": 0.9,
+   "points": 26,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.8 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.8d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.9 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.9d of data)"
    }
   },
   "Oreads": {
@@ -1052,17 +1080,21 @@
     [
      "2026-09-28T05:18Z",
      305
+    ],
+    [
+     "2026-09-28T06:25Z",
+     305
     ]
    ],
-   "volatility7d": 0.53,
-   "dataDays": 0.8,
-   "points": 25,
+   "volatility7d": 0.52,
+   "dataDays": 0.9,
+   "points": 26,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.8 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.8d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %0; bekle (az veri, 0.9 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 0% of 30d range; hold (low confidence, 0.9d of data)"
    }
   },
   "Zion": {
@@ -1089,14 +1121,14 @@
     ]
    ],
    "volatility7d": null,
-   "dataDays": 0.8,
+   "dataDays": 0.9,
    "points": 1,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %50; bekle (az veri, 0.8 gün)",
-    "reasonEN": "24h —, 7d — → flat, at 50% of 30d range; hold (low confidence, 0.8d of data)"
+    "reasonTR": "24s —, 7g — → yatay, 30g aralığında %50; bekle (az veri, 0.9 gün)",
+    "reasonEN": "24h —, 7d — → flat, at 50% of 30d range; hold (low confidence, 0.9d of data)"
    }
   }
  }

@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-29T03:18:45.132Z",
+ "ts": "2026-09-29T04:18:47.980Z",
  "servers": {
   "Zero": {
    "bestBuy": {
@@ -209,11 +209,15 @@
     [
      "2026-09-29T03:18Z",
      525
+    ],
+    [
+     "2026-09-29T04:18Z",
+     525
     ]
    ],
-   "volatility7d": 0.45,
+   "volatility7d": 0.44,
    "dataDays": 1.8,
-   "points": 47,
+   "points": 48,
    "signal": {
     "trend": "up",
     "stance": "hold",
@@ -430,11 +434,15 @@
     [
      "2026-09-29T03:18Z",
      175
+    ],
+    [
+     "2026-09-29T04:18Z",
+     175
     ]
    ],
-   "volatility7d": 1.14,
+   "volatility7d": 1.13,
    "dataDays": 1.8,
-   "points": 47,
+   "points": 48,
    "signal": {
     "trend": "down",
     "stance": "hold",
@@ -651,11 +659,15 @@
     [
      "2026-09-29T03:18Z",
      375
+    ],
+    [
+     "2026-09-29T04:18Z",
+     375
     ]
    ],
-   "volatility7d": 1.04,
+   "volatility7d": 1.02,
    "dataDays": 1.8,
-   "points": 47,
+   "points": 48,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -872,11 +884,15 @@
     [
      "2026-09-29T03:18Z",
      395
+    ],
+    [
+     "2026-09-29T04:18Z",
+     395
     ]
    ],
-   "volatility7d": 0.51,
+   "volatility7d": 0.5,
    "dataDays": 1.8,
-   "points": 47,
+   "points": 48,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -1093,11 +1109,15 @@
     [
      "2026-09-29T03:18Z",
      300
+    ],
+    [
+     "2026-09-29T04:18Z",
+     300
     ]
    ],
-   "volatility7d": 1.03,
+   "volatility7d": 1.02,
    "dataDays": 1.8,
-   "points": 47,
+   "points": 48,
    "signal": {
     "trend": "down",
     "stance": "hold",
@@ -1314,11 +1334,15 @@
     [
      "2026-09-29T03:18Z",
      390
+    ],
+    [
+     "2026-09-29T04:18Z",
+     390
     ]
    ],
    "volatility7d": 0.71,
    "dataDays": 1.8,
-   "points": 47,
+   "points": 48,
    "signal": {
     "trend": "up",
     "stance": "hold",
@@ -1339,7 +1363,7 @@
    "spreadPct": 6.8,
    "current": 250,
    "change1h": 0,
-   "change24h": 0,
+   "change24h": 0.81,
    "change7d": null,
    "change30d": null,
    "min7d": 248,
@@ -1535,17 +1559,21 @@
     [
      "2026-09-29T03:18Z",
      250
+    ],
+    [
+     "2026-09-29T04:18Z",
+     250
     ]
    ],
-   "volatility7d": 0.22,
+   "volatility7d": 0.21,
    "dataDays": 1.8,
-   "points": 47,
+   "points": 48,
    "signal": {
     "trend": "flat",
     "stance": "hold",
     "confidence": "low",
-    "reasonTR": "24s 0.0%, 7g — → yatay, 30g aralığında %50; bekle (az veri, 1.8 gün)",
-    "reasonEN": "24h 0.0%, 7d — → flat, at 50% of 30d range; hold (low confidence, 1.8d of data)"
+    "reasonTR": "24s +0.8%, 7g — → yatay, 30g aralığında %50; bekle (az veri, 1.8 gün)",
+    "reasonEN": "24h +0.8%, 7d — → flat, at 50% of 30d range; hold (low confidence, 1.8d of data)"
    }
   },
   "Oreads": {
@@ -1756,11 +1784,15 @@
     [
      "2026-09-29T03:18Z",
      305
+    ],
+    [
+     "2026-09-29T04:18Z",
+     305
     ]
    ],
-   "volatility7d": 0.49,
+   "volatility7d": 0.48,
    "dataDays": 1.8,
-   "points": 47,
+   "points": 48,
    "signal": {
     "trend": "flat",
     "stance": "hold",

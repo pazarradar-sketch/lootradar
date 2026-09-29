@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-29T04:18:47.980Z",
+ "ts": "2026-09-29T05:18:16.142Z",
  "servers": {
   "Zero": {
    "bestBuy": {
@@ -213,11 +213,15 @@
     [
      "2026-09-29T04:18Z",
      525
+    ],
+    [
+     "2026-09-29T05:18Z",
+     525
     ]
    ],
    "volatility7d": 0.44,
    "dataDays": 1.8,
-   "points": 48,
+   "points": 49,
    "signal": {
     "trend": "up",
     "stance": "hold",
@@ -438,11 +442,15 @@
     [
      "2026-09-29T04:18Z",
      175
+    ],
+    [
+     "2026-09-29T05:18Z",
+     175
     ]
    ],
-   "volatility7d": 1.13,
+   "volatility7d": 1.12,
    "dataDays": 1.8,
-   "points": 48,
+   "points": 49,
    "signal": {
     "trend": "down",
     "stance": "hold",
@@ -663,11 +671,15 @@
     [
      "2026-09-29T04:18Z",
      375
+    ],
+    [
+     "2026-09-29T05:18Z",
+     375
     ]
    ],
-   "volatility7d": 1.02,
+   "volatility7d": 1.01,
    "dataDays": 1.8,
-   "points": 48,
+   "points": 49,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -888,11 +900,15 @@
     [
      "2026-09-29T04:18Z",
      395
+    ],
+    [
+     "2026-09-29T05:18Z",
+     395
     ]
    ],
-   "volatility7d": 0.5,
+   "volatility7d": 0.49,
    "dataDays": 1.8,
-   "points": 48,
+   "points": 49,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -1113,11 +1129,15 @@
     [
      "2026-09-29T04:18Z",
      300
+    ],
+    [
+     "2026-09-29T05:18Z",
+     300
     ]
    ],
-   "volatility7d": 1.02,
+   "volatility7d": 1.01,
    "dataDays": 1.8,
-   "points": 48,
+   "points": 49,
    "signal": {
     "trend": "down",
     "stance": "hold",
@@ -1338,11 +1358,15 @@
     [
      "2026-09-29T04:18Z",
      390
+    ],
+    [
+     "2026-09-29T05:18Z",
+     390
     ]
    ],
-   "volatility7d": 0.71,
+   "volatility7d": 0.7,
    "dataDays": 1.8,
-   "points": 48,
+   "points": 49,
    "signal": {
     "trend": "up",
     "stance": "hold",
@@ -1563,11 +1587,15 @@
     [
      "2026-09-29T04:18Z",
      250
+    ],
+    [
+     "2026-09-29T05:18Z",
+     250
     ]
    ],
    "volatility7d": 0.21,
    "dataDays": 1.8,
-   "points": 48,
+   "points": 49,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -1788,11 +1816,15 @@
     [
      "2026-09-29T04:18Z",
      305
+    ],
+    [
+     "2026-09-29T05:18Z",
+     305
     ]
    ],
    "volatility7d": 0.48,
    "dataDays": 1.8,
-   "points": 48,
+   "points": 49,
    "signal": {
     "trend": "flat",
     "stance": "hold",

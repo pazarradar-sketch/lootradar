@@ -1,9 +1,9 @@
 {
- "ts": "2026-09-30T16:21:55.575Z",
+ "ts": "2026-09-30T17:19:17.370Z",
  "servers": {
   "Zero": {
    "bestBuy": {
-    "src": "kopazar",
+    "src": "oyunfor",
     "price": 570
    },
    "bestSell": {
@@ -13,7 +13,7 @@
    "spreadPct": 0.88,
    "current": 570,
    "change1h": 0.88,
-   "change24h": 4.59,
+   "change24h": 4.01,
    "change7d": null,
    "change30d": null,
    "min7d": 510,
@@ -191,10 +191,6 @@
      525
     ],
     [
-     "2026-09-28T23:16Z",
-     525
-    ],
-    [
      "2026-09-29T00:25Z",
      525
     ],
@@ -357,17 +353,21 @@
     [
      "2026-09-30T16:21Z",
      570
+    ],
+    [
+     "2026-09-30T17:19Z",
+     570
     ]
    ],
-   "volatility7d": 0.52,
+   "volatility7d": 0.51,
    "dataDays": 3.3,
-   "points": 84,
+   "points": 85,
    "signal": {
     "trend": "up",
     "stance": "hold",
     "confidence": "med",
-    "reasonTR": "24s +4.6%, 7g — → yükseliş, 30g aralığında %100; bekle (orta veri, 3.3 gün)",
-    "reasonEN": "24h +4.6%, 7d — → up, at 100% of 30d range; hold (med confidence, 3.3d of data)"
+    "reasonTR": "24s +4.0%, 7g — → yükseliş, 30g aralığında %100; bekle (orta veri, 3.3 gün)",
+    "reasonEN": "24h +4.0%, 7d — → up, at 100% of 30d range; hold (med confidence, 3.3d of data)"
    }
   },
   "Felis": {
@@ -560,10 +560,6 @@
      175
     ],
     [
-     "2026-09-28T23:16Z",
-     175
-    ],
-    [
      "2026-09-29T00:25Z",
      175
     ],
@@ -726,11 +722,15 @@
     [
      "2026-09-30T16:21Z",
      175
+    ],
+    [
+     "2026-09-30T17:19Z",
+     175
     ]
    ],
    "volatility7d": 0.83,
    "dataDays": 3.3,
-   "points": 84,
+   "points": 85,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -750,7 +750,7 @@
    },
    "spreadPct": 3.42,
    "current": 380,
-   "change1h": 2.7,
+   "change1h": 1.33,
    "change24h": 0,
    "change7d": null,
    "change30d": null,
@@ -929,10 +929,6 @@
      375
     ],
     [
-     "2026-09-28T23:16Z",
-     375
-    ],
-    [
      "2026-09-29T00:25Z",
      375
     ],
@@ -1095,11 +1091,15 @@
     [
      "2026-09-30T16:21Z",
      380
+    ],
+    [
+     "2026-09-30T17:19Z",
+     380
     ]
    ],
-   "volatility7d": 0.88,
+   "volatility7d": 0.87,
    "dataDays": 3.3,
-   "points": 84,
+   "points": 85,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -1119,7 +1119,7 @@
    },
    "spreadPct": 3.21,
    "current": 405,
-   "change1h": 1,
+   "change1h": 1.25,
    "change24h": 1.25,
    "change7d": null,
    "change30d": null,
@@ -1298,10 +1298,6 @@
      395
     ],
     [
-     "2026-09-28T23:16Z",
-     395
-    ],
-    [
      "2026-09-29T00:25Z",
      395
     ],
@@ -1464,11 +1460,15 @@
     [
      "2026-09-30T16:21Z",
      405
+    ],
+    [
+     "2026-09-30T17:19Z",
+     405
     ]
    ],
    "volatility7d": 0.42,
    "dataDays": 3.3,
-   "points": 84,
+   "points": 85,
    "signal": {
     "trend": "flat",
     "stance": "sell",
@@ -1488,7 +1488,7 @@
    },
    "spreadPct": 1.61,
    "current": 295,
-   "change1h": 1.72,
+   "change1h": 0,
    "change24h": 0,
    "change7d": null,
    "change30d": null,
@@ -1667,10 +1667,6 @@
      300
     ],
     [
-     "2026-09-28T23:16Z",
-     300
-    ],
-    [
      "2026-09-29T00:25Z",
      300
     ],
@@ -1833,11 +1829,15 @@
     [
      "2026-09-30T16:21Z",
      295
+    ],
+    [
+     "2026-09-30T17:19Z",
+     295
     ]
    ],
    "volatility7d": 0.98,
    "dataDays": 3.3,
-   "points": 84,
+   "points": 85,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -2036,10 +2036,6 @@
      390
     ],
     [
-     "2026-09-28T23:16Z",
-     390
-    ],
-    [
      "2026-09-29T00:25Z",
      390
     ],
@@ -2202,11 +2198,15 @@
     [
      "2026-09-30T16:21Z",
      395
+    ],
+    [
+     "2026-09-30T17:19Z",
+     395
     ]
    ],
    "volatility7d": 0.67,
    "dataDays": 3.3,
-   "points": 84,
+   "points": 85,
    "signal": {
     "trend": "flat",
     "stance": "hold",
@@ -2218,23 +2218,23 @@
   "Minark": {
    "bestBuy": {
     "src": "kopazar",
-    "price": 250
+    "price": 255
    },
    "bestSell": {
     "src": "gamesatis",
     "price": 268
    },
-   "spreadPct": 7.2,
-   "current": 250,
-   "change1h": 0,
-   "change24h": 0,
+   "spreadPct": 5.1,
+   "current": 255,
+   "change1h": 2,
+   "change24h": 2,
    "change7d": null,
    "change30d": null,
    "min7d": 245,
-   "max7d": 252,
+   "max7d": 255,
    "min30d": 245,
-   "max30d": 252,
-   "positionIn30d": 0.714,
+   "max30d": 255,
+   "positionIn30d": 1,
    "sparkline7d": [
     [
      "2026-09-27T09:02Z",
@@ -2405,10 +2405,6 @@
      250
     ],
     [
-     "2026-09-28T23:16Z",
-     250
-    ],
-    [
      "2026-09-29T00:25Z",
      250
     ],
@@ -2571,17 +2567,21 @@
     [
      "2026-09-30T16:21Z",
      250
+    ],
+    [
+     "2026-09-30T17:19Z",
+     255
     ]
    ],
-   "volatility7d": 0.36,
+   "volatility7d": 0.42,
    "dataDays": 3.3,
-   "points": 84,
+   "points": 85,
    "signal": {
-    "trend": "flat",
+    "trend": "up",
     "stance": "hold",
     "confidence": "med",
-    "reasonTR": "24s 0.0%, 7g — → yatay, 30g aralığında %71; bekle (orta veri, 3.3 gün)",
-    "reasonEN": "24h 0.0%, 7d — → flat, at 71% of 30d range; hold (med confidence, 3.3d of data)"
+    "reasonTR": "24s +2.0%, 7g — → yükseliş, 30g aralığında %100; bekle (orta veri, 3.3 gün)",
+    "reasonEN": "24h +2.0%, 7d — → up, at 100% of 30d range; hold (med confidence, 3.3d of data)"
    }
   },
   "Oreads": {
@@ -2774,10 +2774,6 @@
      305
     ],
     [
-     "2026-09-28T23:16Z",
-     305
-    ],
-    [
      "2026-09-29T00:25Z",
      305
     ],
@@ -2940,11 +2936,15 @@
     [
      "2026-09-30T16:21Z",
      310
+    ],
+    [
+     "2026-09-30T17:19Z",
+     310
     ]
    ],
    "volatility7d": 0.4,
    "dataDays": 3.3,
-   "points": 84,
+   "points": 85,
    "signal": {
     "trend": "up",
     "stance": "hold",

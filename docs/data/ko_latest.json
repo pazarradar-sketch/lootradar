@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-30T23:16:18.408Z",
+ "ts": "2026-10-01T00:27:42.715Z",
  "bySource": {
   "gamesatis": {
    "Zero": {
@@ -75,77 +75,36 @@
   },
   "oyunfor": {
    "Zero": {
-    "buy": 565,
-    "sell": 600,
-    "buyVia": "korehberi"
+    "buy": null,
+    "sell": 600
    },
    "Felis": {
-    "buy": 175,
-    "sell": 195,
-    "buyVia": "korehberi"
+    "buy": null,
+    "sell": 195
    },
    "Agartha": {
-    "buy": 395,
-    "sell": 430,
-    "buyVia": "korehberi"
+    "buy": null,
+    "sell": 430
    },
    "Pandora": {
-    "buy": 360,
-    "sell": 405,
-    "buyVia": "korehberi"
+    "buy": null,
+    "sell": 405
    },
    "Dryads": {
-    "buy": 280,
-    "sell": 320,
-    "buyVia": "korehberi"
+    "buy": null,
+    "sell": 320
    },
    "Destan": {
-    "buy": 395,
-    "sell": 425,
-    "buyVia": "korehberi"
+    "buy": null,
+    "sell": 425
    },
    "Oreads": {
-    "buy": 270,
-    "sell": 330,
-    "buyVia": "korehberi"
+    "buy": null,
+    "sell": 330
    },
    "Zion": {
     "buy": null,
     "sell": 630
-   }
-  },
-  "bursagb": {
-   "Zero": {
-    "buy": 296.3,
-    "sell": 597.4
-   },
-   "Agartha": {
-    "buy": 236.3,
-    "sell": 432.6
-   },
-   "Felis": {
-    "buy": 115.5,
-    "sell": 195.7
-   },
-   "Pandora": {
-    "buy": 219.6,
-    "sell": 406.9
-   },
-   "Destan": {
-    "buy": 306,
-    "sell": 430.5
-   },
-   "Oreads": {
-    "buy": 210,
-    "sell": 339.9
-   },
-   "Minark": {
-    "buy": 160.8,
-    "sell": 275.4
-   },
-   "Dryads": {
-    "buy": 160.3,
-    "sell": 321.3
    }
   },
   "bynogame": {
@@ -181,6 +140,40 @@
     "buy": 315,
     "sell": 340.99
    }
+  },
+  "bursagb": {
+   "Zero": {
+    "buy": 296.3,
+    "sell": 597.4
+   },
+   "Agartha": {
+    "buy": 236.3,
+    "sell": 432.6
+   },
+   "Felis": {
+    "buy": 115.5,
+    "sell": 195.7
+   },
+   "Pandora": {
+    "buy": 219.6,
+    "sell": 406.9
+   },
+   "Destan": {
+    "buy": 306,
+    "sell": 430.5
+   },
+   "Oreads": {
+    "buy": 210,
+    "sell": 339.9
+   },
+   "Minark": {
+    "buy": 160.8,
+    "sell": 275.4
+   },
+   "Dryads": {
+    "buy": 160.3,
+    "sell": 321.3
+   }
   }
  },
  "status": {
@@ -192,35 +185,28 @@
   },
   "gamesatis": {
    "ok": true,
-   "ts": "2026-09-30T23:16:18.408Z",
+   "ts": "2026-10-01T00:27:42.715Z",
    "n": 8
   },
   "kopazar": {
    "ok": true,
-   "ts": "2026-09-30T23:16:18.408Z",
+   "ts": "2026-10-01T00:27:42.715Z",
    "n": 9
   },
   "oyunfor": {
    "ok": true,
-   "ts": "2026-09-30T23:16:18.408Z",
+   "ts": "2026-10-01T00:27:42.715Z",
    "n": 8
   },
-  "bursagb": {
-   "ok": true,
-   "ts": "2026-09-30T23:16:18.408Z",
-   "via": "korehberi"
-  },
   "korehberi": {
-   "ok": true,
-   "ts": "2026-09-30T23:16:18.408Z",
-   "sellers": [
-    "kopazar",
-    "bursagb",
-    "bynogame",
-    "gamesatis",
-    "klassgame",
-    "oyunfor"
-   ]
+   "ok": false,
+   "ts": "2026-10-01T00:27:42.715Z",
+   "error": "HTTP 522 https://korehberi.com/en-ucuz-gb"
+  },
+  "bursagb": {
+   "ok": false,
+   "stale": true,
+   "ts": "2026-09-30T23:16:18.408Z"
   }
  },
  "labels": {

@@ -1,11 +1,11 @@
 {
- "ts": "2026-10-14T09:32:32.575Z",
+ "ts": "2026-10-14T10:31:46.742Z",
  "bySource": {
   "gamesatis": {},
   "kopazar": {
    "Zero": {
     "buy": 265,
-    "sell": 293
+    "sell": 290
    },
    "Pandora": {
     "buy": 220,
@@ -24,7 +24,7 @@
     "sell": 400
    },
    "Minark": {
-    "buy": 255,
+    "buy": 260,
     "sell": 275
    },
    "Dryads": {
@@ -67,7 +67,7 @@
     "buyVia": "korehberi"
    },
    "Destan": {
-    "buy": 370,
+    "buy": 375,
     "sell": 400,
     "buyVia": "korehberi"
    },
@@ -99,8 +99,8 @@
     "sell": 250.3
    },
    "Destan": {
-    "buy": 380,
-    "sell": 412
+    "buy": 375,
+    "sell": 408.9
    },
    "Oreads": {
     "buy": 315,
@@ -159,27 +159,27 @@
   },
   "gamesatis": {
    "ok": false,
-   "ts": "2026-10-14T09:32:32.575Z",
+   "ts": "2026-10-14T10:31:46.742Z",
    "n": 0
   },
   "kopazar": {
    "ok": true,
-   "ts": "2026-10-14T09:32:32.575Z",
+   "ts": "2026-10-14T10:31:46.742Z",
    "n": 9
   },
   "oyunfor": {
    "ok": true,
-   "ts": "2026-10-14T09:32:32.575Z",
+   "ts": "2026-10-14T10:31:46.742Z",
    "n": 8
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-10-14T09:32:32.575Z",
+   "ts": "2026-10-14T10:31:46.742Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-10-14T09:32:32.575Z",
+   "ts": "2026-10-14T10:31:46.742Z",
    "sellers": [
     "kopazar",
     "bursagb",

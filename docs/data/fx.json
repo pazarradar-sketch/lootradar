@@ -1,11 +1,8 @@
 {
- "ts": "2026-10-16T09:31:23.336Z",
+ "ts": "2026-10-16T10:31:05.685Z",
  "usdtry": 49.480304,
  "source": "open.er-api.com",
- "tcmb": {
-  "buying": 49.3315,
-  "selling": 49.4204
- },
+ "tcmb": null,
  "usdeur": 0.89165,
  "updated": "Fri, 16 Oct 2026 00:02:31 +0000"
 }

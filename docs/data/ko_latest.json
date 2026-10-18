@@ -1,10 +1,10 @@
 {
- "ts": "2026-10-18T17:23:25.091Z",
+ "ts": "2026-10-18T18:26:52.876Z",
  "bySource": {
   "gamesatis": {},
   "kopazar": {
    "Zero": {
-    "buy": 275,
+    "buy": 282,
     "sell": 305
    },
    "Pandora": {
@@ -40,62 +40,21 @@
     "sell": null
    }
   },
-  "oyunfor": {
-   "Zero": {
-    "buy": 275,
-    "sell": 300,
-    "buyVia": "korehberi"
-   },
-   "Felis": {
-    "buy": 160,
-    "sell": 200,
-    "buyVia": "korehberi"
-   },
-   "Agartha": {
-    "buy": 175,
-    "sell": 250,
-    "buyVia": "korehberi"
-   },
-   "Pandora": {
-    "buy": 175,
-    "sell": 240,
-    "buyVia": "korehberi"
-   },
-   "Dryads": {
-    "buy": 270,
-    "sell": 300,
-    "buyVia": "korehberi"
-   },
-   "Destan": {
-    "buy": 375,
-    "sell": 410,
-    "buyVia": "korehberi"
-   },
-   "Oreads": {
-    "buy": 320,
-    "sell": 340,
-    "buyVia": "korehberi"
-   },
-   "Zion": {
-    "buy": null,
-    "sell": 600
-   }
-  },
   "bursagb": {
    "Zero": {
-    "buy": 282,
-    "sell": 314.2
+    "buy": 285,
+    "sell": 309
    },
    "Agartha": {
     "buy": 205,
-    "sell": 242.1
+    "sell": 241.9
    },
    "Felis": {
     "buy": 175,
     "sell": 199.8
    },
    "Pandora": {
-    "buy": 228,
+    "buy": 227,
     "sell": 247.2
    },
    "Destan": {
@@ -148,6 +107,47 @@
     "buy": 315,
     "sell": 340.99
    }
+  },
+  "oyunfor": {
+   "Zero": {
+    "buy": 275,
+    "sell": 300,
+    "buyVia": "korehberi"
+   },
+   "Felis": {
+    "buy": 160,
+    "sell": 200,
+    "buyVia": "korehberi"
+   },
+   "Agartha": {
+    "buy": 175,
+    "sell": 250,
+    "buyVia": "korehberi"
+   },
+   "Pandora": {
+    "buy": 175,
+    "sell": 240,
+    "buyVia": "korehberi"
+   },
+   "Dryads": {
+    "buy": 270,
+    "sell": 300,
+    "buyVia": "korehberi"
+   },
+   "Destan": {
+    "buy": 375,
+    "sell": 410,
+    "buyVia": "korehberi"
+   },
+   "Oreads": {
+    "buy": 320,
+    "sell": 340,
+    "buyVia": "korehberi"
+   },
+   "Zion": {
+    "buy": null,
+    "sell": 600
+   }
   }
  },
  "status": {
@@ -159,27 +159,28 @@
   },
   "gamesatis": {
    "ok": false,
-   "ts": "2026-10-18T17:23:25.091Z",
+   "ts": "2026-10-18T18:26:52.876Z",
    "n": 0
   },
   "kopazar": {
    "ok": true,
-   "ts": "2026-10-18T17:23:25.091Z",
+   "ts": "2026-10-18T18:26:52.876Z",
    "n": 9
   },
   "oyunfor": {
-   "ok": true,
+   "ok": false,
    "ts": "2026-10-18T17:23:25.091Z",
-   "n": 8
+   "error": "HTTP 403 https://www.oyunfor.com/knight-online/gb-gold-bar",
+   "stale": true
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-10-18T17:23:25.091Z",
+   "ts": "2026-10-18T18:26:52.876Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-10-18T17:23:25.091Z",
+   "ts": "2026-10-18T18:26:52.876Z",
    "sellers": [
     "kopazar",
     "bursagb",

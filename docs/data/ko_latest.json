@@ -1,11 +1,11 @@
 {
- "ts": "2026-10-19T15:32:40.224Z",
+ "ts": "2026-10-19T16:32:50.481Z",
  "bySource": {
   "gamesatis": {},
   "kopazar": {
    "Zero": {
-    "buy": 270,
-    "sell": 295
+    "buy": 266,
+    "sell": 294
    },
    "Pandora": {
     "buy": 227,
@@ -38,6 +38,47 @@
    "Zion": {
     "buy": null,
     "sell": null
+   }
+  },
+  "oyunfor": {
+   "Zero": {
+    "buy": 270,
+    "sell": 295,
+    "buyVia": "korehberi"
+   },
+   "Felis": {
+    "buy": 170,
+    "sell": 200,
+    "buyVia": "korehberi"
+   },
+   "Agartha": {
+    "buy": 175,
+    "sell": 240,
+    "buyVia": "korehberi"
+   },
+   "Pandora": {
+    "buy": 175,
+    "sell": 240,
+    "buyVia": "korehberi"
+   },
+   "Dryads": {
+    "buy": 270,
+    "sell": 300,
+    "buyVia": "korehberi"
+   },
+   "Destan": {
+    "buy": 375,
+    "sell": 400,
+    "buyVia": "korehberi"
+   },
+   "Oreads": {
+    "buy": 322,
+    "sell": 345,
+    "buyVia": "korehberi"
+   },
+   "Zion": {
+    "buy": null,
+    "sell": 600
    }
   },
   "bursagb": {
@@ -107,47 +148,6 @@
     "buy": 315,
     "sell": 340.99
    }
-  },
-  "oyunfor": {
-   "Zero": {
-    "buy": 275,
-    "sell": 300,
-    "buyVia": "korehberi"
-   },
-   "Felis": {
-    "buy": 160,
-    "sell": 200,
-    "buyVia": "korehberi"
-   },
-   "Agartha": {
-    "buy": 175,
-    "sell": 250,
-    "buyVia": "korehberi"
-   },
-   "Pandora": {
-    "buy": 175,
-    "sell": 240,
-    "buyVia": "korehberi"
-   },
-   "Dryads": {
-    "buy": 270,
-    "sell": 300,
-    "buyVia": "korehberi"
-   },
-   "Destan": {
-    "buy": 375,
-    "sell": 410,
-    "buyVia": "korehberi"
-   },
-   "Oreads": {
-    "buy": 320,
-    "sell": 340,
-    "buyVia": "korehberi"
-   },
-   "Zion": {
-    "buy": null,
-    "sell": 600
-   }
   }
  },
  "status": {
@@ -159,28 +159,27 @@
   },
   "gamesatis": {
    "ok": false,
-   "ts": "2026-10-19T15:32:40.224Z",
+   "ts": "2026-10-19T16:32:50.481Z",
    "n": 0
   },
   "kopazar": {
    "ok": true,
-   "ts": "2026-10-19T15:32:40.224Z",
+   "ts": "2026-10-19T16:32:50.481Z",
    "n": 9
   },
   "oyunfor": {
-   "ok": false,
-   "ts": "2026-10-18T17:23:25.091Z",
-   "error": "HTTP 403 https://www.oyunfor.com/knight-online/gb-gold-bar",
-   "stale": true
+   "ok": true,
+   "ts": "2026-10-19T16:32:50.481Z",
+   "n": 8
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-10-19T15:32:40.224Z",
+   "ts": "2026-10-19T16:32:50.481Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-10-19T15:32:40.224Z",
+   "ts": "2026-10-19T16:32:50.481Z",
    "sellers": [
     "kopazar",
     "bursagb",

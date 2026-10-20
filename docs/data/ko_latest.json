@@ -1,18 +1,18 @@
 {
- "ts": "2026-10-20T13:40:12.622Z",
+ "ts": "2026-10-20T14:31:26.555Z",
  "bySource": {
   "gamesatis": {},
   "kopazar": {
    "Zero": {
     "buy": 270,
-    "sell": 295
+    "sell": 290
    },
    "Pandora": {
     "buy": 215,
     "sell": 230
    },
    "Agartha": {
-    "buy": 210,
+    "buy": 205,
     "sell": 225
    },
    "Felis": {
@@ -33,7 +33,7 @@
    },
    "Oreads": {
     "buy": 325,
-    "sell": 345
+    "sell": 340
    },
    "Zion": {
     "buy": null,
@@ -84,7 +84,7 @@
   "bursagb": {
    "Zero": {
     "buy": 270,
-    "sell": 301.8
+    "sell": 298.7
    },
    "Agartha": {
     "buy": 215,
@@ -103,7 +103,7 @@
     "sell": 417.2
    },
    "Oreads": {
-    "buy": 325,
+    "buy": 327,
     "sell": 355.3
    },
    "Minark": {
@@ -154,32 +154,32 @@
   "bynogame": {
    "ok": false,
    "ts": "2026-09-27T09:37:19.842Z",
-   "error": "HTTP 403 https://www.bynogame.com/tr/oyunlar/knight-online/gold-bar",
+   "error": "fetch failed",
    "stale": true
   },
   "gamesatis": {
    "ok": false,
-   "ts": "2026-10-20T13:40:12.622Z",
+   "ts": "2026-10-20T14:31:26.555Z",
    "n": 0
   },
   "kopazar": {
    "ok": true,
-   "ts": "2026-10-20T13:40:12.622Z",
+   "ts": "2026-10-20T14:31:26.555Z",
    "n": 9
   },
   "oyunfor": {
    "ok": true,
-   "ts": "2026-10-20T13:40:12.622Z",
+   "ts": "2026-10-20T14:31:26.555Z",
    "n": 8
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-10-20T13:40:12.622Z",
+   "ts": "2026-10-20T14:31:26.555Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-10-20T13:40:12.622Z",
+   "ts": "2026-10-20T14:31:26.555Z",
    "sellers": [
     "kopazar",
     "bursagb",

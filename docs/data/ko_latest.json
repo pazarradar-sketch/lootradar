@@ -1,7 +1,45 @@
 {
- "ts": "2026-10-24T10:25:18.575Z",
+ "ts": "2026-10-24T11:24:54.329Z",
  "bySource": {
   "gamesatis": {},
+  "kopazar": {
+   "Zero": {
+    "buy": 275,
+    "sell": 295
+   },
+   "Pandora": {
+    "buy": 210,
+    "sell": 230
+   },
+   "Agartha": {
+    "buy": 210,
+    "sell": 230
+   },
+   "Felis": {
+    "buy": 170,
+    "sell": 190
+   },
+   "Destan": {
+    "buy": 375,
+    "sell": 400
+   },
+   "Minark": {
+    "buy": 265,
+    "sell": 280
+   },
+   "Dryads": {
+    "buy": 265,
+    "sell": 280
+   },
+   "Oreads": {
+    "buy": 335,
+    "sell": 355
+   },
+   "Zion": {
+    "buy": null,
+    "sell": null
+   }
+  },
   "oyunfor": {
    "Zero": {
     "buy": 270,
@@ -110,44 +148,6 @@
     "buy": 315,
     "sell": 340.99
    }
-  },
-  "kopazar": {
-   "Zero": {
-    "buy": 277,
-    "sell": 297
-   },
-   "Pandora": {
-    "buy": 220,
-    "sell": 240
-   },
-   "Agartha": {
-    "buy": 214,
-    "sell": 234
-   },
-   "Felis": {
-    "buy": 176,
-    "sell": 189
-   },
-   "Destan": {
-    "buy": 380,
-    "sell": 405
-   },
-   "Minark": {
-    "buy": 260,
-    "sell": 280
-   },
-   "Dryads": {
-    "buy": 255,
-    "sell": 280
-   },
-   "Oreads": {
-    "buy": 330,
-    "sell": 355
-   },
-   "Zion": {
-    "buy": null,
-    "sell": null
-   }
   }
  },
  "status": {
@@ -159,28 +159,27 @@
   },
   "gamesatis": {
    "ok": false,
-   "ts": "2026-10-24T10:25:18.575Z",
+   "ts": "2026-10-24T11:24:54.329Z",
    "n": 0
   },
   "kopazar": {
-   "ok": false,
-   "ts": "2026-10-23T05:29:18.385Z",
-   "error": "HTTP 403 https://www.kopazar.com/knight-online-gold-bar",
-   "stale": true
+   "ok": true,
+   "ts": "2026-10-24T11:24:54.329Z",
+   "n": 9
   },
   "oyunfor": {
    "ok": true,
-   "ts": "2026-10-24T10:25:18.575Z",
+   "ts": "2026-10-24T11:24:54.329Z",
    "n": 8
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-10-24T10:25:18.575Z",
+   "ts": "2026-10-24T11:24:54.329Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-10-24T10:25:18.575Z",
+   "ts": "2026-10-24T11:24:54.329Z",
    "sellers": [
     "kopazar",
     "bursagb",

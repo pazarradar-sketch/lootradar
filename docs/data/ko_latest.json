@@ -1,5 +1,5 @@
 {
- "ts": "2026-10-26T08:43:14.909Z",
+ "ts": "2026-10-26T09:40:02.424Z",
  "bySource": {
   "gamesatis": {},
   "oyunfor": {
@@ -34,7 +34,7 @@
     "buyVia": "korehberi"
    },
    "Oreads": {
-    "buy": 335,
+    "buy": 340,
     "sell": 360,
     "buyVia": "korehberi"
    },
@@ -61,7 +61,7 @@
     "sell": 234.8
    },
    "Destan": {
-    "buy": 380,
+    "buy": 375,
     "sell": 406.9
    },
    "Oreads": {
@@ -159,7 +159,7 @@
   },
   "gamesatis": {
    "ok": false,
-   "ts": "2026-10-26T08:43:14.909Z",
+   "ts": "2026-10-26T09:40:02.424Z",
    "n": 0
   },
   "kopazar": {
@@ -170,17 +170,17 @@
   },
   "oyunfor": {
    "ok": true,
-   "ts": "2026-10-26T08:43:14.909Z",
+   "ts": "2026-10-26T09:40:02.424Z",
    "n": 8
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-10-26T08:43:14.909Z",
+   "ts": "2026-10-26T09:40:02.424Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-10-26T08:43:14.909Z",
+   "ts": "2026-10-26T09:40:02.424Z",
    "sellers": [
     "kopazar",
     "bursagb",

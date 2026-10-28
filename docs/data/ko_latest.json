@@ -1,10 +1,11 @@
 {
- "ts": "2026-10-28T08:20:01.983Z",
+ "ts": "2026-10-28T15:54:17.046Z",
  "bySource": {
+  "gamesatis": {},
   "oyunfor": {
    "Zero": {
     "buy": 260,
-    "sell": 295,
+    "sell": 290,
     "buyVia": "korehberi"
    },
    "Felis": {
@@ -18,12 +19,12 @@
     "buyVia": "korehberi"
    },
    "Pandora": {
-    "buy": 190,
-    "sell": 230,
+    "buy": 200,
+    "sell": 220,
     "buyVia": "korehberi"
    },
    "Dryads": {
-    "buy": 260,
+    "buy": 265,
     "sell": 280,
     "buyVia": "korehberi"
    },
@@ -45,11 +46,11 @@
   "bursagb": {
    "Zero": {
     "buy": 275,
-    "sell": 298.7
+    "sell": 293.6
    },
    "Agartha": {
-    "buy": 210,
-    "sell": 226.6
+    "buy": 213,
+    "sell": 224.5
    },
    "Felis": {
     "buy": 170,
@@ -60,11 +61,11 @@
     "sell": 226.6
    },
    "Destan": {
-    "buy": 380,
-    "sell": 412
+    "buy": 375,
+    "sell": 406.9
    },
    "Oreads": {
-    "buy": 345,
+    "buy": 340,
     "sell": 370.8
    },
    "Minark": {
@@ -73,7 +74,7 @@
    },
    "Dryads": {
     "buy": 268,
-    "sell": 280.5
+    "sell": 275.4
    }
   },
   "bynogame": {
@@ -110,7 +111,6 @@
     "sell": 340.99
    }
   },
-  "gamesatis": {},
   "kopazar": {
    "Zero": {
     "buy": 280,
@@ -159,9 +159,8 @@
   },
   "gamesatis": {
    "ok": false,
-   "ts": "2026-10-28T02:06:27.963Z",
-   "error": "HTTP 403 https://www.gamesatis.com/knight-online-goldbar",
-   "stale": true
+   "ts": "2026-10-28T15:54:17.046Z",
+   "n": 0
   },
   "kopazar": {
    "ok": false,
@@ -171,17 +170,17 @@
   },
   "oyunfor": {
    "ok": true,
-   "ts": "2026-10-28T08:20:01.983Z",
+   "ts": "2026-10-28T15:54:17.046Z",
    "n": 8
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-10-28T08:20:01.983Z",
+   "ts": "2026-10-28T15:54:17.046Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-10-28T08:20:01.983Z",
+   "ts": "2026-10-28T15:54:17.046Z",
    "sellers": [
     "kopazar",
     "bursagb",

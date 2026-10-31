@@ -1,11 +1,11 @@
 {
- "ts": "2026-10-31T09:29:59.329Z",
+ "ts": "2026-10-31T15:41:29.982Z",
  "bySource": {
   "gamesatis": {},
   "oyunfor": {
    "Zero": {
-    "buy": 272,
-    "sell": 290,
+    "buy": 275,
+    "sell": 295,
     "buyVia": "korehberi"
    },
    "Felis": {
@@ -14,13 +14,13 @@
     "buyVia": "korehberi"
    },
    "Agartha": {
-    "buy": 205,
-    "sell": 220,
+    "buy": 210,
+    "sell": 230,
     "buyVia": "korehberi"
    },
    "Pandora": {
     "buy": 210,
-    "sell": 225,
+    "sell": 235,
     "buyVia": "korehberi"
    },
    "Dryads": {
@@ -29,13 +29,13 @@
     "buyVia": "korehberi"
    },
    "Destan": {
-    "buy": 370,
-    "sell": 400,
+    "buy": 375,
+    "sell": 390,
     "buyVia": "korehberi"
    },
    "Oreads": {
-    "buy": 357,
-    "sell": 370,
+    "buy": 360,
+    "sell": 380,
     "buyVia": "korehberi"
    },
    "Zion": {
@@ -45,27 +45,27 @@
   },
   "bursagb": {
    "Zero": {
-    "buy": 260,
-    "sell": 293.6
+    "buy": 275,
+    "sell": 303.9
    },
    "Agartha": {
-    "buy": 200,
-    "sell": 221.5
+    "buy": 212,
+    "sell": 231.8
    },
    "Felis": {
-    "buy": 175,
-    "sell": 195.7
+    "buy": 180,
+    "sell": 200.9
    },
    "Pandora": {
-    "buy": 215,
+    "buy": 217,
     "sell": 236.9
    },
    "Destan": {
-    "buy": 365,
-    "sell": 396.6
+    "buy": 375,
+    "sell": 401.7
    },
    "Oreads": {
-    "buy": 359,
+    "buy": 360,
     "sell": 386.2
    },
    "Minark": {
@@ -159,7 +159,7 @@
   },
   "gamesatis": {
    "ok": false,
-   "ts": "2026-10-31T09:29:59.329Z",
+   "ts": "2026-10-31T15:41:29.982Z",
    "n": 0
   },
   "kopazar": {
@@ -170,17 +170,17 @@
   },
   "oyunfor": {
    "ok": true,
-   "ts": "2026-10-31T09:29:59.329Z",
+   "ts": "2026-10-31T15:41:29.982Z",
    "n": 8
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-10-31T09:29:59.329Z",
+   "ts": "2026-10-31T15:41:29.982Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-10-31T09:29:59.329Z",
+   "ts": "2026-10-31T15:41:29.982Z",
    "sellers": [
     "kopazar",
     "bursagb",

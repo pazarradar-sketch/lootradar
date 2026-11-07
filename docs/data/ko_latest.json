@@ -1,31 +1,31 @@
 {
- "ts": "2026-11-06T20:48:49.623Z",
+ "ts": "2026-11-07T00:49:33.508Z",
  "bySource": {
   "gamesatis": {},
   "oyunfor": {
    "Zero": {
-    "buy": 255,
-    "sell": 280,
+    "buy": 250,
+    "sell": 290,
     "buyVia": "korehberi"
    },
    "Felis": {
-    "buy": 185,
-    "sell": 195,
+    "buy": 175,
+    "sell": 200,
     "buyVia": "korehberi"
    },
    "Agartha": {
-    "buy": 205,
-    "sell": 220,
+    "buy": 200,
+    "sell": 225,
     "buyVia": "korehberi"
    },
    "Pandora": {
-    "buy": 210,
-    "sell": 225,
+    "buy": 205,
+    "sell": 235,
     "buyVia": "korehberi"
    },
    "Dryads": {
     "buy": 245,
-    "sell": 269,
+    "sell": 275,
     "buyVia": "korehberi"
    },
    "Destan": {
@@ -35,25 +35,25 @@
    },
    "Oreads": {
     "buy": 340,
-    "sell": 373,
+    "sell": 380,
     "buyVia": "korehberi"
    },
    "Zion": {
     "buy": null,
-    "sell": 560
+    "sell": 570
    }
   },
   "bursagb": {
    "Zero": {
     "buy": 265,
-    "sell": 293.6
+    "sell": 283.3
    },
    "Agartha": {
     "buy": 210,
     "sell": 223.5
    },
    "Felis": {
-    "buy": 186,
+    "buy": 180,
     "sell": 200.9
    },
    "Pandora": {
@@ -61,20 +61,20 @@
     "sell": 231.8
    },
    "Destan": {
-    "buy": 355,
+    "buy": 350,
     "sell": 381.1
    },
    "Oreads": {
     "buy": 350,
-    "sell": 383.1
+    "sell": 381.1
    },
    "Minark": {
     "buy": 268,
-    "sell": 288.7
+    "sell": 290.7
    },
    "Dryads": {
-    "buy": 256,
-    "sell": 272.3
+    "buy": 260,
+    "sell": 280.5
    }
   },
   "bynogame": {
@@ -159,7 +159,7 @@
   },
   "gamesatis": {
    "ok": false,
-   "ts": "2026-11-06T20:48:49.623Z",
+   "ts": "2026-11-07T00:49:33.508Z",
    "n": 0
   },
   "kopazar": {
@@ -170,17 +170,17 @@
   },
   "oyunfor": {
    "ok": true,
-   "ts": "2026-11-06T20:48:49.623Z",
+   "ts": "2026-11-07T00:49:33.508Z",
    "n": 8
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-11-06T20:48:49.623Z",
+   "ts": "2026-11-07T00:49:33.508Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-11-06T20:48:49.623Z",
+   "ts": "2026-11-07T00:49:33.508Z",
    "sellers": [
     "kopazar",
     "bursagb",

@@ -1,5 +1,5 @@
 {
- "ts": "2026-11-08T02:16:32.162Z",
+ "ts": "2026-11-08T10:09:09.087Z",
  "bySource": {
   "gamesatis": {},
   "oyunfor": {
@@ -9,13 +9,13 @@
     "buyVia": "korehberi"
    },
    "Felis": {
-    "buy": 180,
+    "buy": 185,
     "sell": 200,
     "buyVia": "korehberi"
    },
    "Agartha": {
     "buy": 205,
-    "sell": 220,
+    "sell": 230,
     "buyVia": "korehberi"
    },
    "Pandora": {
@@ -25,7 +25,7 @@
    },
    "Dryads": {
     "buy": 250,
-    "sell": 280,
+    "sell": 275,
     "buyVia": "korehberi"
    },
    "Destan": {
@@ -35,45 +35,45 @@
    },
    "Oreads": {
     "buy": 350,
-    "sell": 380,
+    "sell": 370,
     "buyVia": "korehberi"
    },
    "Zion": {
     "buy": null,
-    "sell": 570
+    "sell": 560
    }
   },
   "bursagb": {
    "Zero": {
-    "buy": 267,
+    "buy": 238,
     "sell": 288.4
    },
    "Agartha": {
-    "buy": 205,
+    "buy": 187,
     "sell": 226.6
    },
    "Felis": {
-    "buy": 185,
+    "buy": 165.7,
     "sell": 200.9
    },
    "Pandora": {
-    "buy": 215,
-    "sell": 236.9
+    "buy": 192.9,
+    "sell": 233.8
    },
    "Destan": {
-    "buy": 355,
-    "sell": 386.3
+    "buy": 327.3,
+    "sell": 396.6
    },
    "Oreads": {
-    "buy": 350,
-    "sell": 381.1
+    "buy": 310.2,
+    "sell": 375.9
    },
    "Minark": {
-    "buy": 276,
+    "buy": 246.5,
     "sell": 295.8
    },
    "Dryads": {
-    "buy": 260,
+    "buy": 233.8,
     "sell": 280.5
    }
   },
@@ -159,7 +159,7 @@
   },
   "gamesatis": {
    "ok": false,
-   "ts": "2026-11-08T02:16:32.162Z",
+   "ts": "2026-11-08T10:09:09.087Z",
    "n": 0
   },
   "kopazar": {
@@ -170,17 +170,17 @@
   },
   "oyunfor": {
    "ok": true,
-   "ts": "2026-11-08T02:16:32.162Z",
+   "ts": "2026-11-08T10:09:09.087Z",
    "n": 8
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-11-08T02:16:32.162Z",
+   "ts": "2026-11-08T10:09:09.087Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-11-08T02:16:32.162Z",
+   "ts": "2026-11-08T10:09:09.087Z",
    "sellers": [
     "kopazar",
     "bursagb",

@@ -1,41 +1,41 @@
 {
- "ts": "2026-11-11T05:54:02.954Z",
+ "ts": "2026-11-11T13:59:48.900Z",
  "bySource": {
   "gamesatis": {},
   "oyunfor": {
    "Zero": {
-    "buy": 235,
-    "sell": 275,
+    "buy": 230,
+    "sell": 255,
     "buyVia": "korehberi"
    },
    "Felis": {
     "buy": 180,
-    "sell": 200,
+    "sell": 195,
     "buyVia": "korehberi"
    },
    "Agartha": {
-    "buy": 185,
-    "sell": 215,
+    "buy": 190,
+    "sell": 205,
     "buyVia": "korehberi"
    },
    "Pandora": {
     "buy": 180,
-    "sell": 225,
+    "sell": 215,
     "buyVia": "korehberi"
    },
    "Dryads": {
     "buy": 240,
-    "sell": 275,
+    "sell": 265,
     "buyVia": "korehberi"
    },
    "Destan": {
     "buy": 330,
-    "sell": 375,
+    "sell": 365,
     "buyVia": "korehberi"
    },
    "Oreads": {
     "buy": 330,
-    "sell": 365,
+    "sell": 350,
     "buyVia": "korehberi"
    },
    "Zion": {
@@ -46,7 +46,7 @@
   "bursagb": {
    "Zero": {
     "buy": 238,
-    "sell": 264.6
+    "sell": 257.4
    },
    "Agartha": {
     "buy": 187,
@@ -58,19 +58,19 @@
    },
    "Pandora": {
     "buy": 192.9,
-    "sell": 221.5
+    "sell": 216.3
    },
    "Destan": {
     "buy": 327.3,
-    "sell": 376
+    "sell": 370.8
    },
    "Oreads": {
     "buy": 310.2,
-    "sell": 365.6
+    "sell": 360.5
    },
    "Minark": {
     "buy": 246.5,
-    "sell": 283.6
+    "sell": 280.5
    },
    "Dryads": {
     "buy": 233.8,
@@ -159,7 +159,7 @@
   },
   "gamesatis": {
    "ok": false,
-   "ts": "2026-11-11T05:54:02.954Z",
+   "ts": "2026-11-11T13:59:48.900Z",
    "n": 0
   },
   "kopazar": {
@@ -170,17 +170,17 @@
   },
   "oyunfor": {
    "ok": true,
-   "ts": "2026-11-11T05:54:02.954Z",
+   "ts": "2026-11-11T13:59:48.900Z",
    "n": 8
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-11-11T05:54:02.954Z",
+   "ts": "2026-11-11T13:59:48.900Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-11-11T05:54:02.954Z",
+   "ts": "2026-11-11T13:59:48.900Z",
    "sellers": [
     "kopazar",
     "bursagb",

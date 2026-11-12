@@ -1,39 +1,80 @@
 {
- "ts": "2026-11-12T10:52:38.622Z",
+ "ts": "2026-11-12T18:46:57.560Z",
  "bySource": {
   "gamesatis": {},
+  "oyunfor": {
+   "Zero": {
+    "buy": 190,
+    "sell": 250,
+    "buyVia": "korehberi"
+   },
+   "Felis": {
+    "buy": 170,
+    "sell": 195,
+    "buyVia": "korehberi"
+   },
+   "Agartha": {
+    "buy": 175,
+    "sell": 205,
+    "buyVia": "korehberi"
+   },
+   "Pandora": {
+    "buy": 170,
+    "sell": 215,
+    "buyVia": "korehberi"
+   },
+   "Dryads": {
+    "buy": 200,
+    "sell": 255,
+    "buyVia": "korehberi"
+   },
+   "Destan": {
+    "buy": 300,
+    "sell": 355,
+    "buyVia": "korehberi"
+   },
+   "Oreads": {
+    "buy": 280,
+    "sell": 345,
+    "buyVia": "korehberi"
+   },
+   "Zion": {
+    "buy": null,
+    "sell": 550
+   }
+  },
   "bursagb": {
    "Zero": {
     "buy": 183.8,
-    "sell": 236.8
+    "sell": 236.9
    },
    "Agartha": {
-    "buy": 187,
-    "sell": 200.9
+    "buy": 146.3,
+    "sell": 206
    },
    "Felis": {
-    "buy": 165.7,
+    "buy": 142.5,
     "sell": 195.7
    },
    "Pandora": {
-    "buy": 192.9,
-    "sell": 206
+    "buy": 150,
+    "sell": 211.2
    },
    "Destan": {
-    "buy": 327.3,
+    "buy": 270,
     "sell": 370.8
    },
    "Oreads": {
-    "buy": 284.8,
-    "sell": 345
+    "buy": 251.3,
+    "sell": 339.9
    },
    "Minark": {
-    "buy": 246.5,
+    "buy": 202.5,
     "sell": 275.4
    },
    "Dryads": {
-    "buy": 233.8,
-    "sell": 260.1
+    "buy": 191.3,
+    "sell": 265.2
    }
   },
   "bynogame": {
@@ -107,47 +148,6 @@
     "buy": null,
     "sell": null
    }
-  },
-  "oyunfor": {
-   "Zero": {
-    "buy": 220,
-    "sell": 250,
-    "buyVia": "korehberi"
-   },
-   "Felis": {
-    "buy": 180,
-    "sell": 195,
-    "buyVia": "korehberi"
-   },
-   "Agartha": {
-    "buy": 190,
-    "sell": 205,
-    "buyVia": "korehberi"
-   },
-   "Pandora": {
-    "buy": 180,
-    "sell": 215,
-    "buyVia": "korehberi"
-   },
-   "Dryads": {
-    "buy": 240,
-    "sell": 270,
-    "buyVia": "korehberi"
-   },
-   "Destan": {
-    "buy": 330,
-    "sell": 365,
-    "buyVia": "korehberi"
-   },
-   "Oreads": {
-    "buy": 320,
-    "sell": 350,
-    "buyVia": "korehberi"
-   },
-   "Zion": {
-    "buy": null,
-    "sell": 550
-   }
   }
  },
  "status": {
@@ -159,7 +159,7 @@
   },
   "gamesatis": {
    "ok": false,
-   "ts": "2026-11-12T10:52:38.622Z",
+   "ts": "2026-11-12T18:46:57.560Z",
    "n": 0
   },
   "kopazar": {
@@ -169,19 +169,18 @@
    "stale": true
   },
   "oyunfor": {
-   "ok": false,
-   "ts": "2026-11-12T02:48:18.424Z",
-   "error": "HTTP 522 https://www.oyunfor.com/knight-online/gb-gold-bar",
-   "stale": true
+   "ok": true,
+   "ts": "2026-11-12T18:46:57.560Z",
+   "n": 8
   },
   "bursagb": {
    "ok": true,
-   "ts": "2026-11-12T10:52:38.622Z",
+   "ts": "2026-11-12T18:46:57.560Z",
    "via": "korehberi"
   },
   "korehberi": {
    "ok": true,
-   "ts": "2026-11-12T10:52:38.622Z",
+   "ts": "2026-11-12T18:46:57.560Z",
    "sellers": [
     "kopazar",
     "bursagb",
